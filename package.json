@@ -1,1 +1,27 @@
-{"name":"nooc-ink","version":"1.0.0","private":true,"description":"My Gatsby site","author":"Nooc","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"license":"0BSD","dependencies":{"gatsby":"^2.26.1","react":"^16.13.1","react-dom":"^16.13.1"}}
+{
+  "name": "nooc-ink",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Gatsby site",
+  "author": "Nooc",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
