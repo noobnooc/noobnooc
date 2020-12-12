@@ -19,4 +19,7 @@ jobs:
       - name: deploy
         env: 
           GH_TOKEN: ${{secrets.GH_TOKEN}}
-        run: npm run deploy
+        run: |
+          git config --global user.email "nooc@nooc.ink"
+          git config --global user.name "Nooc"
+          npm run deploy
