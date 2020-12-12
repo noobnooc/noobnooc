@@ -1,0 +1,22 @@
+name: Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: build
+        run: | 
+          npm install
+          npm build
+
+      - name: deploy
+        env: 
+          GH_TOKEN: ${{secrets.GH_TOEN}}
+        run: npm deploy
