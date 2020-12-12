@@ -13,7 +13,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git"
+    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git",
+    "format": "prettier --write .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:prettier"
   },
   "license": "0BSD",
   "dependencies": {
@@ -27,6 +30,7 @@
     "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "prettier": "2.2.1"
   }
 }

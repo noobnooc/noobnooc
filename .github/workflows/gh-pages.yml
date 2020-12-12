@@ -2,7 +2,7 @@ name: Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
@@ -11,13 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: build
-        run: | 
-          npm install
-          npm build
+      - name: install
+        run: npm install
+
+      - name: lint
+        run: npm run lint
 
       - name: deploy
-        env: 
+        env:
           GH_TOKEN: ${{secrets.GH_TOKEN}}
         run: |
           git config --global user.email "nooc@nooc.ink"

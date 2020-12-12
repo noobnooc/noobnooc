@@ -1,13 +1,13 @@
 .wrapper {
-    height: 100vh;
+  height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
