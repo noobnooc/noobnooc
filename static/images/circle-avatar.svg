@@ -2,7 +2,7 @@
 <svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Transparent Avatar (Circle)</title>
     <defs>
-        <circle id="path-1" cx="200" cy="200" r="200"></circle>
+        <circle id="path-1" cx="200" cy="200" r="198"></circle>
     </defs>
     <g id="Transparent-Avatar-(Circle)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <mask id="mask-2" fill="white">
