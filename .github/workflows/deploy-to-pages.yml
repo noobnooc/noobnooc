@@ -28,7 +28,6 @@ jobs:
           YARN_CACHE_FOLDER: ~/.yarn/cache
         run: yarn
 
-
       - name: Lint
         run: yarn lint
 
