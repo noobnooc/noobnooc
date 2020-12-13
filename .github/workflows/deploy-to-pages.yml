@@ -16,15 +16,18 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.yarn/cache
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
       - name: Install Dependencies
+        env:
+          YARN_CACHE_FOLDER: ~/.yarn/cache
         run: yarn
+
 
       - name: Lint
         run: yarn lint
