@@ -3,14 +3,20 @@ import * as React from "react";
 
 import styles from "./home.module.css";
 
+const AVATAR_ANIMATION_DELAY = 500;
+
 const HomePage = () => {
   React.useEffect(() => {
-    Lottie.loadAnimation({
+    let animation = Lottie.loadAnimation({
       container: document.querySelector("#animated-avatar-container"),
-      autoplay: true,
+      autoplay: false,
       loop: false,
       path: "/lottie/animated-avatar.json",
     });
+
+    setTimeout(() => {
+      animation.play();
+    }, AVATAR_ANIMATION_DELAY);
   });
 
   return (
