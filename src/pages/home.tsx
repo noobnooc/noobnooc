@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div className={styles.wrapper}>
       <div id="animated-avatar-container" className={styles.avatar} />
-      <p>constructing ...</p>
+      <p>Welcome</p>
     </div>
   );
 };
