@@ -23,6 +23,7 @@
     "gatsby": "^2.26.1",
     "gatsby-plugin-manifest": "^2.8.0",
     "gatsby-plugin-typography": "^2.8.0",
+    "lottie-web": "^5.7.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-typography": "^0.16.19",

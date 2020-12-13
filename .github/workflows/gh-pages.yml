@@ -24,13 +24,13 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Lint
-        run: npm run lint
+        run: yarn lint
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to Pages
         env:
@@ -38,4 +38,4 @@ jobs:
         run: |
           git config --global user.email "nooc@nooc.ink"
           git config --global user.name "Nooc"
-          npm run deploy
+          yarn deploy
