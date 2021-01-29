@@ -3,11 +3,7 @@ import * as React from "react";
 import HomePage from "./home";
 
 const IndexPage = () => {
-  return (
-    <main>
-      <HomePage />
-    </main>
-  );
+  return <HomePage />;
 };
 
 export default IndexPage;
