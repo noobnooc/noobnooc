@@ -5,5 +5,18 @@
   "main": "index.js",
   "repository": "git@github.com:noobnooc/nooc.ink.git",
   "author": "Nooc <nooc@nooc.ink>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.7",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5",
+    "vite-plugin-svgr": "^1.1.0"
+  }
 }
