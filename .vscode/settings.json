@@ -1,9 +1,24 @@
 {
-    "cSpell.words": [
-        "noobnooc",
-        "nooc",
-        "svgr",
-        "vite"
-    ],
-    "editor.formatOnSave": true
+  "cSpell.words": ["noobnooc", "nooc", "svgr", "vite"],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [80],
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsc.autoDetect": "off",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.lintTask.enable": true,
+  "css.lint.vendorPrefix": "ignore"
 }
