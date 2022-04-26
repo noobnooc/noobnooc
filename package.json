@@ -1,0 +1,9 @@
+{
+  "name": "nooc.ink",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:noobnooc/nooc.ink.git",
+  "author": "Nooc <nooc@nooc.ink>",
+  "license": "MIT"
+}
