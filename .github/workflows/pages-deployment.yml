@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write
 
@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy to Pages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email "nooc@nooc.ink"
           git config --global user.name "Nooc"

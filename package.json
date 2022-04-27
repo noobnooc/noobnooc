@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "vite build",
-    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git",
+    "deploy": "gh-pages -d dist -r https://$GITHUB_TOKEN@github.com/noobnooc/nooc.ink.git",
     "format": "prettier --write .",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint src",
