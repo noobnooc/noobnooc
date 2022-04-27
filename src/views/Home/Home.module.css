@@ -5,8 +5,55 @@
 }
 
 .content {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.face {
+  width: 300px;
+  height: 300px;
+}
+
+.eyesRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.eyeLeft {
+  animation: eye-animation 5s ease-in-out -1s infinite alternate;
+}
+
+.eyeRight {
+  animation: eye-animation 5s ease-in-out infinite alternate;
+}
+
+@keyframes eye-animation {
+  from {
+    transform: translateY(-25px) scale(1);
+  }
+  to {
+    transform: translateY(25px) scale(1.1);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .face {
+    width: 200px;
+    height: 200px;
+  }
+
+  .eye {
+    width: 75px;
+    height: 75px;
+  }
 }
