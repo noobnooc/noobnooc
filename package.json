@@ -7,7 +7,12 @@
   "author": "Nooc <nooc@nooc.ink>",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/noobnooc/nooc.ink.git",
+    "format": "prettier --write .",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint src",
+    "lint": "npm run lint:prettier"
   },
   "dependencies": {
     "classnames": "^2.3.1",
