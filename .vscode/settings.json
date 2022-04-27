@@ -13,6 +13,7 @@
   "files.trimTrailingWhitespace": true,
   "typescript.tsc.autoDetect": "off",
   "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
