@@ -8,7 +8,6 @@
   "license": "MIT",
   "scripts": {
     "build": "vite build",
-    "deploy": "gh-pages -d dist -r https://$GITHUB_TOKEN@github.com/noobnooc/nooc.ink.git",
     "format": "prettier --write .",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint src",
@@ -27,7 +26,6 @@
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4",
-    "gh-pages": "^3.2.3",
     "prettier": "^2.6.2",
     "typescript": "^4.6.3",
     "typescript-plugin-css-modules": "^3.4.0",
