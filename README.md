@@ -19,6 +19,7 @@
 ![](https://img.shields.io/badge/React-★★★-61DAFB?logo=React)
 ![](https://img.shields.io/badge/CSS-★★★-1572B6?logo=CSS3)
 ![](https://img.shields.io/badge/NodeJS-★★★-339933?logo=Node.js)
+![](https://img.shields.io/badge/Linux-★★-FCC624?logo=Linux)
 ![](https://img.shields.io/badge/Git-★★-F05032?logo=Git)
 ![](https://img.shields.io/badge/Docker-★★-2496ED?logo=Docker)
 ![](https://img.shields.io/badge/Socket.io-★★-010101?logo=Socket.io)
