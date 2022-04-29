@@ -41,4 +41,8 @@
 
 [![Instagram](https://img.shields.io/badge/Instagram-noobnooc-E4405F?logo=Instagram&style=for-the-badge)](https://www.instagram.com/noobnooc/)
 
+[![YouTube](https://img.shields.io/badge/YouTube-心月在路上Nooc-FF0000?logo=YouTube&logoColor=FF0000&style=for-the-badge)](https://www.youtube.com/channel/UCKCBrQjYOqyJ0SjRD1xTAog)
+
+[![BiliBili](https://img.shields.io/badge/BiliBili-心月在路上-00A1D6?logo=Bilibili&style=for-the-badge)](https://space.bilibili.com/11005963)
+
 [![Weibo](https://img.shields.io/badge/Weibo-心月在路上Nooc-E6162D?logo=Sina%2dWeibo&style=for-the-badge)](https://weibo.com/noobnooc)
