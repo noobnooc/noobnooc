@@ -2,14 +2,58 @@
   width: 100%;
   height: 100%;
   background-color: black;
+  overflow-x: hidden;
+  transition: transform 1s;
+  scroll-behavior: smooth;
 }
 
-.content {
+.languageIndicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: opacity 1s;
+}
+
+.page {
+  position: relative;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.pageIndicator,
+.pageIndicator:active,
+.pageIndicator:visited {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  animation: page-indicator-animation 3s ease-in-out infinite alternate;
+  transition: opacity 1s;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+@keyframes page-indicator-animation {
+  from {
+    color: white;
+    transform: translateY(0);
+  }
+  to {
+    color: gray;
+    transform: translateY(-10px);
+  }
 }
 
 .face {
@@ -56,4 +100,15 @@
     width: 75px;
     height: 75px;
   }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem,
+.menuItem:active,
+.menuItem:visited {
+  color: white;
 }

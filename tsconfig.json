@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["esnext", "dom"],
     "jsx": "react",
     "esModuleInterop": true,
 

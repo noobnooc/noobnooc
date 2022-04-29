@@ -1,0 +1,13 @@
+.languageIndicator {
+  display: flex;
+  line-height: 20px;
+}
+
+.indicator {
+  color: gray;
+  padding: 5px;
+}
+
+.activeIndicator {
+  color: white;
+}
