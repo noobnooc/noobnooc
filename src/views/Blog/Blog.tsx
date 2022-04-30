@@ -2,13 +2,13 @@ import React from "react";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-import classes from "./About.module.css";
+import classes from "./Blog.module.css";
 
-export const About: FC = () => {
+export const Blog: FC = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.content}>
-        About Me<Link to="/">Home</Link>
+        🚧 Under Construction 🚧<Link to="/">Back</Link>
       </div>
     </div>
   );

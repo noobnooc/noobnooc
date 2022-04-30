@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import { I18NProvider } from "./i18n";
-import { About } from "./views/About";
+import { Blog } from "./views/Blog";
 import { Home } from "./views/Home/Home";
 
 export const App: FC = () => {
@@ -9,7 +9,7 @@ export const App: FC = () => {
     <I18NProvider>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </I18NProvider>

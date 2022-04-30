@@ -101,14 +101,3 @@
     height: 75px;
   }
 }
-
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.menuItem,
-.menuItem:active,
-.menuItem:visited {
-  color: white;
-}

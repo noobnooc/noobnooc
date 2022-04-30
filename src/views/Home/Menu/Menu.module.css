@@ -1,0 +1,21 @@
+.menu {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menuItem,
+.menuItem:active,
+.menuItem:visited {
+  color: white;
+  line-height: 65px;
+  font-size: 48px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.5s;
+}
+
+.menuItem:hover {
+  text-decoration-color: white;
+}

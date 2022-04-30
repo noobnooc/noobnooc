@@ -1,14 +1,13 @@
 import classNames from "classnames";
 import React, { useState } from "react";
 import { LanguageIndicator } from "../../components/LanguageIndicator";
-import { useI18N } from "../../i18n";
+import { About } from "./AboutCard";
 
 import classes from "./Home.module.css";
+import { Menu } from "./Menu";
 
 export function Home() {
   const [atTop, setAtTop] = useState(true);
-
-  const { strings } = useI18N();
 
   return (
     <div
@@ -33,25 +32,8 @@ export function Home() {
           ⌃
         </a>
       </div>
-      <div id="menu" className={classes.page}>
-        <div className={classes.menu}>
-          <a
-            className={classes.menuItem}
-            href="https://digests.nooc.ink"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {strings.menu.digest}
-          </a>
-          <a className={classes.menuItem} href="#about">
-            {strings.menu.about}
-          </a>
-        </div>
-      </div>
-      <div id="about" className={classes.page}>
-        <div>{strings.about.title}</div>
-        <div>{strings.about.description}</div>
-      </div>
+      <Menu id="menu" className={classes.page} />
+      <About id="about" className={classes.page} />
 
       <LanguageIndicator
         className={classNames(classes.languageIndicator, {
