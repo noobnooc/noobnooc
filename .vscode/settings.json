@@ -6,7 +6,8 @@
   "eslint.nodePath": ".yarn/sdks",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": [
-    "tailwindcss"
-  ]
+  "cSpell.words": ["NOOC", "tailwindcss"],
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
 }
