@@ -7,7 +7,7 @@ import ProfileCard from "../components/profile-card";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-gray-100 dark:text-black">
+    <div className="flex min-h-screen flex-col bg-gray-100 text-black dark:bg-neutral-900 dark:text-gray-100">
       <Head>
         <title>Nooc&apos;s World</title>
         <meta name="description" content="Nooc's Home" />
