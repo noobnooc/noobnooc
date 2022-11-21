@@ -11,7 +11,7 @@ export default function Card({
   return (
     <div
       className={classNames(
-        "rounded-xl border border-gray-200 bg-white p-5 shadow-md shadow-gray-500/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-500/5 ",
+        "rounded-xl border border-gray-200 bg-white p-4 shadow-md shadow-gray-500/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-500/5 ",
         className
       )}
     >
