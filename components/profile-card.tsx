@@ -24,7 +24,7 @@ export default function ProfileCard() {
         />
       </p>
       <p className="mt-2 opacity-60">在虚无主义与存在主义中间的理想主义者</p>
-      <div className="mt-10 flex space-x-5">
+      <div className="mt-10 flex items-center space-x-5">
         <a href="https://twitter.com/noobnooc">
           <Twitter className="h-6 w-6 hover:text-[#1DA1F2]" />
         </a>
@@ -35,7 +35,7 @@ export default function ProfileCard() {
           <Instagram className="h-6 w-6 hover:text-[#E4405F]" />
         </a>
         <a href="mailto:nooc@nooc.ink">
-          <EnvelopeIcon className="h-6 w-6" />
+          <EnvelopeIcon className="h-7 w-7" />
         </a>
       </div>
     </Card>

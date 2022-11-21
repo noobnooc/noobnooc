@@ -473,6 +473,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@vercel/analytics@npm:0.1.5"
+  peerDependencies:
+    react: ^16.8||^17||^18
+  checksum: ebade083273b093db3f0b98fc88013d787da7ad57635329b128eaee23a47ac541bbcf1d2257f56bb440afb6b872addfccae0bea0ab0962ffa2a7661e08b78760
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -2647,6 +2656,7 @@ __metadata:
     "@types/node": 18.11.9
     "@types/react": 18.0.25
     "@types/react-dom": 18.0.9
+    "@vercel/analytics": ^0.1.5
     autoprefixer: ^10.4.13
     classnames: ^2.3.2
     eslint: 8.28.0
