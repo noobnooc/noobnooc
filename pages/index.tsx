@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import BackgroundGradient from "../components/background-gradient";
 import Card from "../components/card";
 import DoingCard from "../components/doing-card";
 import PlayingCard from "../components/playing-card";
@@ -7,12 +8,16 @@ import ProfileCard from "../components/profile-card";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-gray-100 text-black dark:bg-neutral-900 dark:text-gray-100">
+    <div className="relative isolate flex min-h-screen flex-col overflow-hidden bg-gray-100 text-black dark:bg-neutral-900 dark:text-gray-100">
       <Head>
         <title>Nooc&apos;s World</title>
         <meta name="description" content="Nooc's Home" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <BackgroundGradient className="top-0 left-0 h-96 w-48 bg-indigo-500/30 duration-500 dark:bg-blue-500/40" />
+      <BackgroundGradient className="left-60 top-96 h-64 w-72 rounded-lg bg-blue-500/30  duration-700 dark:bg-indigo-500/40" />
+      <BackgroundGradient className="right-96 bottom-60 h-60 w-60 rounded-lg bg-red-500/30 dark:bg-violet-500/30" />
+      <BackgroundGradient className="right-0 bottom-0 h-48 w-96 rounded-full bg-orange-500/30 dark:bg-cyan-500/30" />
 
       <main className="flex grow flex-col justify-center">
         <section>
@@ -26,7 +31,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="text-md py-10 text-center text-sm text-gray-400">
+      <footer className="text-md py-10 text-center text-sm opacity-40">
         © 2022 Nooc
       </footer>
     </div>

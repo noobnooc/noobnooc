@@ -4,10 +4,13 @@ import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import avatar from "../public/avatar.png";
 import twitterVerified from "../public/twitter-verified.svg";
+import BackgroundGradient from "./background-gradient";
 
 export default function ProfileCard() {
   return (
-    <Card className="row-span-2 flex flex-col items-center justify-center py-20">
+    <Card className="relative row-span-2 flex flex-col items-center justify-center py-20">
+      <BackgroundGradient className="bottom-0 right-0 h-36 w-16 bg-green-500/50 duration-500 dark:bg-amber-400/50" />
+
       <Image className="h-16 w-16 rounded-full" src={avatar} alt="Avatar" />
       <p className="relative mt-2 items-end text-xl">
         Nooc

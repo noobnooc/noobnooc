@@ -18,6 +18,7 @@
     "classnames": "^2.3.2",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "framer-motion": "^7.6.7",
     "next": "13.0.4",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",

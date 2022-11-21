@@ -9,5 +9,6 @@
   "cSpell.words": ["Kosto", "NOOC", "tailwindcss"],
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2
 }
