@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Hi there 👋
 
-## Getting Started
+[![Website Status](https://img.shields.io/website?label=https://www.nooc.ink&down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.nooc.ink)](https://www.nooc.ink)
+![](https://komarev.com/ghpvc/?username=noobnooc&color=brightgreen)
 
-First, run the development server:
+- 🔭 I’m currently working on emo
+- 🌱 I’m currently learning to live
+- 👯 I’m looking to collaborate on love
+- 🤔 I’m looking for help with getting rich
+- 💬 Ask me about nothing
+- 📫 How to reach me: call out
+- 😄 Pronouns: that man
+- ⚡ Fun fact: I am not fun
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### My Stacks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![](https://img.shields.io/badge/JavaScript-★★★-F7DF1E?logo=JavaScript)
+![](https://img.shields.io/badge/TypeScript-★★★-3178C6?logo=TypeScript)
+![](https://img.shields.io/badge/React-★★★-61DAFB?logo=React)
+![](https://img.shields.io/badge/CSS-★★★-1572B6?logo=CSS3)
+![](https://img.shields.io/badge/NodeJS-★★★-339933?logo=Node.js)
+![](https://img.shields.io/badge/Swift-★★-F05138?logo=Swift)
+![](https://img.shields.io/badge/Linux-★★-FCC624?logo=Linux)
+![](https://img.shields.io/badge/Git-★★-F05032?logo=Git)
+![](https://img.shields.io/badge/Docker-★★-2496ED?logo=Docker)
+![](https://img.shields.io/badge/Electron-★★-47848F?logo=Electron)
+![](https://img.shields.io/badge/MongoDB-★★-47A248?logo=MongoDB)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+> - ★★★: Frequently used
+> - ★★: Mostly used
+> - ★: Rarely used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Where To Find Me
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[![Twitter](https://img.shields.io/badge/Twitter-noobnooc-1DA1F2?logo=Twitter&style=for-the-badge)](https://twitter.com/noobnooc)
 
-## Learn More
+[![GitHub](https://img.shields.io/badge/GitHub-noobnooc-181717?logo=GitHub&style=for-the-badge)](https://github.com/noobnooc)
 
-To learn more about Next.js, take a look at the following resources:
+[![Instagram](https://img.shields.io/badge/Instagram-noobnooc-E4405F?logo=Instagram&style=for-the-badge)](https://www.instagram.com/noobnooc/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- [![YouTube](https://img.shields.io/badge/YouTube-心月在路上Nooc-FF0000?logo=YouTube&logoColor=FF0000&style=for-the-badge)](https://www.youtube.com/channel/UCKCBrQjYOqyJ0SjRD1xTAog)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![BiliBili](https://img.shields.io/badge/BiliBili-心月在路上-00A1D6?logo=Bilibili&style=for-the-badge)](https://space.bilibili.com/11005963)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Weibo](https://img.shields.io/badge/Weibo-心月在路上Nooc-E6162D?logo=Sina%2dWeibo&style=for-the-badge)](https://weibo.com/noobnooc) -->
