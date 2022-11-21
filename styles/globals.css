@@ -9,7 +9,8 @@
     local("LXGW WenKai Screen"), local("LXGW WenKai GB"),
     url(https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.245.1/LXGWWenKaiLite-Regular.ttf)
       format("truetype"),
-    url(/xwwk.ttf) format("truetype");
+    url(xwwk.ttf) format("truetype");
+    font-display: fallback;
 }
 
 html,
