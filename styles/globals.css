@@ -3,13 +3,22 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Space Grotesk";
+  src: local("Space Grotesk"),
+    url("https://github.com/floriankarsten/space-grotesk/raw/master/fonts/ttf/SpaceGrotesk%5Bwght%5D.ttf")
+      format("truetype"),
+    url("/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
   font-family: "LXGW WenKa";
   src: local("LXGW WenKai"), local("LXGW WenKai Regular"),
     local("LXGW WenKai Lite"), local("LXGW WenKai Lite Regular"),
     local("LXGW WenKai Screen"), local("LXGW WenKai GB"),
-    url(https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.245.1/LXGWWenKaiLite-Regular.ttf)
+    url("https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.245.1/LXGWWenKaiLite-Regular.ttf")
       format("truetype"),
-    url(/xwwk.ttf) format("truetype");
+    url("/xwwk.ttf") format("truetype");
   font-display: fallback;
 }
 
@@ -17,8 +26,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: SF Pro, Inter, Avenir, Helvetica, Arial, sans-serif,
-    "LXGW WenKa" -apple-system;
+  font-family: Space Grotesk, SF Pro, Inter, Avenir, Helvetica, Arial,
+    sans-serif, "LXGW WenKa" -apple-system;
 }
 
 a {
