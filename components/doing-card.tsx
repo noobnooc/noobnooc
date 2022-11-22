@@ -31,8 +31,6 @@ export default function DoingCard() {
     typeof items[number] | undefined
   >();
 
-  console.log("###", selectedItem);
-
   return (
     <Card className="flex flex-col justify-between px-4">
       <h1 className="mb-2 px-4 text-lg">在做什么</h1>

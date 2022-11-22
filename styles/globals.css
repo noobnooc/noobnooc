@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://gw.alipayobjects.com/os/k/webfont/style.css");
+
 @font-face {
   font-family: "Space Grotesk";
   src: local("Space Grotesk"),
@@ -11,23 +13,12 @@
   font-display: fallback;
 }
 
-@font-face {
-  font-family: "LXGW WenKa";
-  src: local("LXGW WenKai"), local("LXGW WenKai Regular"),
-    local("LXGW WenKai Lite"), local("LXGW WenKai Lite Regular"),
-    local("LXGW WenKai Screen"), local("LXGW WenKai GB"),
-    url("https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.245.1/LXGWWenKaiLite-Regular.ttf")
-      format("truetype"),
-    url("/xwwk.ttf") format("truetype");
-  font-display: fallback;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Space Grotesk, SF Pro, Inter, Avenir, Helvetica, Arial,
-    sans-serif, "LXGW WenKa" -apple-system;
+  font-family: "Space Grotesk", SF Pro, Inter, Avenir, Helvetica, Arial,
+    sans-serif, "LXGW WenKai Lite" -apple-system;
 }
 
 a {
