@@ -31,7 +31,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="text-md py-10 text-center text-sm opacity-40">
+      <footer className="text-md py-10 text-center text-sm opacity-60">
         © 2022 Nooc
       </footer>
     </div>

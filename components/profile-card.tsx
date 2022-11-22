@@ -29,13 +29,13 @@ export default function ProfileCard() {
           <Twitter className="h-6 w-6 hover:text-[#1DA1F2]" />
         </a>
         <a href="https://github.com/noobnooc/noobnooc">
-          <Github className="h-6 w-6 hover:text-[#181717]" />
+          <Github className="h-6 w-6 hover:text-purple-500" />
         </a>
         <a href="https://www.instagram.com/noobnooc/">
           <Instagram className="h-6 w-6 hover:text-[#E4405F]" />
         </a>
         <a href="mailto:nooc@nooc.ink">
-          <EnvelopeIcon className="h-7 w-7" />
+          <EnvelopeIcon className="h-7 w-7 hover:text-green-500" />
         </a>
       </div>
     </Card>
