@@ -23,13 +23,13 @@ const items = [
     name: "typescript",
     icon: <Typescript className="h-6 w-6" />,
     summary:
-      "TypeScript, 最常使用的编程语言, 常搭配使用的有 Node/React/Tailwind 。",
+      "TypeScript, 最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 。",
   },
   {
     name: "swift",
     icon: <Swift className="h-6 w-6" />,
     summary:
-      "Swift, 最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI/Combine 。",
+      "Swift, 最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine 。",
   },
   {
     name: "sketch",
@@ -102,15 +102,9 @@ export default function PlayingCard() {
           })}
         </AnimateSharedLayout>
       </div>
-      <div className="overflow-hidden rounded-xl border bg-white/60 p-4 sm:h-24">
+      <div className="overflow-hidden rounded-xl border bg-white/60 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
         <p className="opacity-70 transition-all">
-          {selectedItem?.summary ?? (
-            <>
-              我来人间一趟, 我要看看太阳。
-              <br />
-              <span className="opacity-50">(点击图标可以看具体是啥)</span>
-            </>
-          )}
+          {selectedItem?.summary ?? <>我来人间一趟, 我要看看太阳。</>}
         </p>
       </div>
     </Card>

@@ -53,16 +53,8 @@ export default function DoingCard() {
           );
         })}
       </div>
-      <div className="overflow-hidden rounded-xl border bg-white/60 p-4 sm:h-24">
-        <p className="opacity-70">
-          {selectedItem?.summary ?? (
-            <>
-              在路上
-              <br />
-              <span className="opacity-50">(点击图标可以看具体是啥)</span>
-            </>
-          )}
-        </p>
+      <div className="overflow-hidden rounded-xl border  bg-white/60 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
+        <p className="opacity-70">{selectedItem?.summary ?? <>在路上</>}</p>
       </div>
     </Card>
   );
