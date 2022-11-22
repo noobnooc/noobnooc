@@ -13,7 +13,7 @@ const items = [
     ),
     summary: (
       <>
-        知出（Kosto），一个还在做的 iOS 记账应用，暂时只有一个破
+        知出（Kosto）, 一个还在做的 iOS 记账应用, 暂时只有一个破
         <a
           className="text-blue-500 hover:underline"
           href="https://kosto.nooc.ink"
