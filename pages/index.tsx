@@ -13,6 +13,10 @@ export default function Home() {
         <title>Nooc&apos;s World</title>
         <meta name="description" content="Nooc's Home" />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="keywords"
+          content="Nooc, noobnooc, noocink, nookinc, Noob Nooc, Homepage"
+        />
       </Head>
       <BackgroundGradient className="top-0 left-0 h-96 w-48 bg-indigo-500/30 duration-500 dark:bg-blue-500/40" />
       <BackgroundGradient className="left-60 top-96 h-64 w-72 rounded-lg bg-blue-500/30  duration-700 dark:bg-indigo-500/40" />
