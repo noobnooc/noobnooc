@@ -23,8 +23,6 @@ export default function ProfileCard() {
       className="relative row-span-2"
       front={
         <Card className="flex h-full flex-col items-center justify-center pb-28 pt-20 sm:py-20">
-          <BackgroundGradient className="bottom-0 right-0 h-36 w-16 bg-green-500/50 duration-500 dark:bg-amber-400/50" />
-
           <Image className="h-16 w-16 rounded-full" src={avatar} alt="Avatar" />
           <p className="relative mt-2 items-end text-xl">
             Nooc
@@ -63,8 +61,6 @@ export default function ProfileCard() {
       }
       back={
         <Card className="flex h-full flex-col items-center justify-center">
-          <BackgroundGradient className="bottom-0 right-0 h-36 w-16 bg-yellow-500/50 duration-500 dark:bg-yellow-400/50" />
-
           <div>
             <p>一个人。</p>
 
@@ -93,6 +89,8 @@ export default function ProfileCard() {
         </Card>
       }
       flipped={flipped}
-    />
+    >
+      <BackgroundGradient className="bottom-0 right-0 h-36 w-16 bg-green-500/50 duration-500 dark:bg-amber-400/50" />
+    </FlippableCard>
   );
 }

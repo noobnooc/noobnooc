@@ -5,11 +5,13 @@ export default function FlippableCard({
   back,
   flipped,
   className,
+  children,
 }: {
   className?: string;
   front: ReactNode;
   back: ReactNode;
   flipped: boolean;
+  children?: ReactNode;
 }) {
   return (
     <div
@@ -18,6 +20,7 @@ export default function FlippableCard({
         perspective: "1000px",
       }}
     >
+      {children}
       <div
         className="relative h-full w-full"
         style={{
