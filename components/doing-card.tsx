@@ -4,6 +4,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import kosto from "../public/kosto.png";
 import { useState } from "react";
+import classNames from "classnames";
 
 const items = [
   {
@@ -26,14 +27,19 @@ const items = [
   },
 ];
 
-export default function DoingCard() {
+export default function DoingCard({ className }: { className?: string }) {
   const [selectedItem, setSelectedItem] = useState<
     typeof items[number] | undefined
   >();
 
   return (
-    <Card className="flex flex-col justify-between px-4">
-      <h1 className="mb-2 px-4 text-lg">在做什么</h1>
+    <Card
+      className={classNames(
+        "flex flex-col justify-between bg-green-100/20 px-4 hover:-translate-y-1",
+        className
+      )}
+    >
+      <h1 className="mb-2 text-green-500/60">在做什么</h1>
       <div className="my-3 flex px-4">
         {items.map((item) => {
           const selected = selectedItem?.name === item.name;
@@ -51,7 +57,7 @@ export default function DoingCard() {
           );
         })}
       </div>
-      <div className="overflow-hidden rounded-xl border  bg-white/60 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
+      <div className="overflow-hidden rounded-xl border border-gray-400/20  bg-white/40 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
         <p className="opacity-70">{selectedItem?.summary ?? <>在路上</>}</p>
       </div>
     </Card>
