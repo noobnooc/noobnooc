@@ -71,7 +71,7 @@ export default function PlayingCard({ className }: { className?: string }) {
       )}
     >
       <h1 className="mb-2 text-red-500/60">在玩什么</h1>
-      <div className="overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
+      <div className="overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 dark:border-white/30 dark:bg-black/30 sm:h-24">
         <p className="opacity-70 transition-all">
           {selectedItem?.summary ?? <>我来人间一趟, 我要看看太阳。</>}
         </p>

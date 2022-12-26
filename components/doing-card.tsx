@@ -8,22 +8,13 @@ import classNames from "classnames";
 
 const items = [
   {
-    name: "typescript",
+    name: "kosto",
     icon: (
-      <Image className="h-10 w-10 rounded-lg" src={kosto} alt="Kosto App" />
+      <Image className="h-11 w-11 rounded-lg" src={kosto} alt="Kosto App" />
     ),
-    summary: (
-      <>
-        知出（Kosto）, 一个还在做的 iOS 记账应用, 暂时只有一个破
-        <a
-          className="text-blue-500 hover:underline"
-          href="https://kosto.nooc.ink"
-        >
-          官网
-        </a>
-        。
-      </>
-    ),
+    url: "https://kosto.nooc.ink",
+    title: "知出 (Kosto)",
+    summary: <>一个还在做的 iOS 记账应用。</>,
   },
 ];
 
@@ -40,25 +31,22 @@ export default function DoingCard({ className }: { className?: string }) {
       )}
     >
       <h1 className="mb-2 text-green-500/60">在做什么</h1>
-      <div className="my-3 flex px-4">
+      <div className="mt-5 flex flex-col">
         {items.map((item) => {
-          const selected = selectedItem?.name === item.name;
-
           return (
-            <div
-              className="cursor-pointer"
+            <a
               key={item.name}
-              onClick={() => {
-                setSelectedItem(selected ? undefined : item);
-              }}
+              className="flex items-center overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 hover:opacity-90 dark:border-white/30 dark:bg-black/30"
+              href={item.url}
             >
               {item.icon}
-            </div>
+              <div className="ml-3 flex flex-col">
+                <h2 className="">{item.title}</h2>
+                <p className="text-sm opacity-60">{item.summary}</p>
+              </div>
+            </a>
           );
         })}
-      </div>
-      <div className="overflow-hidden rounded-xl border border-gray-400/20  bg-white/40 p-4 dark:border-white/40 dark:bg-black/30 sm:h-24">
-        <p className="opacity-70">{selectedItem?.summary ?? <>在路上</>}</p>
       </div>
     </Card>
   );
