@@ -3,10 +3,20 @@ import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import kosto from "../public/kosto.png";
+import lofyee from "../public/lofyee.png";
 import { useState } from "react";
 import classNames from "classnames";
 
 const items = [
+  {
+    name: "lofyee",
+    icon: (
+      <Image className="h-11 w-11 rounded-lg" src={lofyee} alt="Kosto App" />
+    ),
+    url: "https://lofyee.com",
+    title: "Lofyee",
+    summary: <>一个 Lo-Fi 音乐播放器。</>,
+  },
   {
     name: "kosto",
     icon: (
@@ -31,12 +41,12 @@ export default function DoingCard({ className }: { className?: string }) {
       )}
     >
       <h1 className="mb-2 text-green-500/60">在做什么</h1>
-      <div className="mt-5 flex flex-col">
+      <div className="mt-2 flex flex-col">
         {items.map((item) => {
           return (
             <a
               key={item.name}
-              className="flex items-center overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 hover:opacity-90 dark:border-white/30 dark:bg-black/30"
+              className="mt-2 flex items-center overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 hover:opacity-90 dark:border-white/30 dark:bg-black/30"
               href={item.url}
             >
               {item.icon}
