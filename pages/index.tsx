@@ -5,6 +5,7 @@ import BlogCard from "../components/blog-card";
 import Card from "../components/card";
 import ContactCard from "../components/contact-card";
 import DoingCard from "../components/doing-card";
+import LinkCard from "../components/link-card";
 import PlayingCard from "../components/playing-card";
 import ProfileCard from "../components/profile-card";
 

@@ -2,12 +2,25 @@ import Card from "./card";
 import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
-import kosto from "../public/kosto.png";
+import AssisChat from "../public/assischat.png";
 import lofyee from "../public/lofyee.png";
 import { useState } from "react";
 import classNames from "classnames";
 
 const items = [
+  {
+    name: "assischat",
+    icon: (
+      <Image
+        className="h-11 w-11 rounded-lg"
+        src={AssisChat}
+        alt="AssisChat App"
+      />
+    ),
+    url: "https://assischat.com",
+    title: "AssisChat",
+    summary: <>一个 ChatGPT 客户端。</>,
+  },
   {
     name: "lofyee",
     icon: (
@@ -16,15 +29,6 @@ const items = [
     url: "https://lofyee.com",
     title: "Lofyee",
     summary: <>一个 Lo-Fi 音乐播放器。</>,
-  },
-  {
-    name: "kosto",
-    icon: (
-      <Image className="h-11 w-11 rounded-lg" src={kosto} alt="Kosto App" />
-    ),
-    url: "https://kosto.nooc.ink",
-    title: "知出 (Kosto)",
-    summary: <>一个还在做的 iOS 记账应用。</>,
   },
 ];
 
