@@ -2,7 +2,7 @@ import Card from "./card";
 import Image from "next/image";
 import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import classNames from "classnames";
-import Avatar from "../public/avatar.png";
+import SubjectiveWorld from "../public/subjective-world.png";
 
 const items = [
   {
@@ -13,12 +13,16 @@ const items = [
     summary: <>分享一些技术</>,
   },
   {
-    name: "wechat",
+    name: "subjective-world",
     icon: (
-      <Image className="h-11 w-11 rounded-lg" src={Avatar} alt="Kosto App" />
+      <Image
+        className="h-11 w-11 rounded-lg"
+        src={SubjectiveWorld}
+        alt="Subjective World"
+      />
     ),
-    url: "https://mp.weixin.qq.com/s/u4RYlGzJOzn_ENml85b4nA",
-    title: "日常牢骚",
+    url: "https://subjective.world",
+    title: "主观世界",
     summary: <>读书、生活、思考</>,
   },
 ];
@@ -31,7 +35,7 @@ export default function BlogCard({ className }: { className?: string }) {
         className
       )}
     >
-      <h1 className="mb-2 text-orange-500/60">博客</h1>
+      <h1 className="mb-2 text-orange-500/60">在写什么</h1>
       <div className="mt-2 flex flex-col">
         {items.map((item) => {
           return (
