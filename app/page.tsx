@@ -93,7 +93,7 @@ export default function Home() {
               <Title className=" text-yellow-500">即刻</Title>
             </Card>
             <Card
-              className="flex aspect-square flex-col bg-green-300/10 dark:bg-yellow-400/10"
+              className="flex aspect-square flex-col bg-green-300/10 dark:bg-green-400/10"
               link="mailto:nooc@nooc.me"
             >
               <EnvelopeIcon className="mb-auto h-10 w-10 text-green-500" />
@@ -111,7 +111,7 @@ export default function Home() {
                 alt="Quwu Logo"
               />
               <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
-                <Subtitle className="mt-auto self-end text-sm">
+                <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个收集有趣物品的网站
                 </Subtitle>
                 <Title className="self-end font-normal">趣物</Title>
@@ -127,7 +127,7 @@ export default function Home() {
                 alt="AssisChat App"
               />
               <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
-                <Subtitle className="mt-auto self-end text-sm">
+                <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个 ChatGPT 客户端
                 </Subtitle>
                 <Title className="self-end font-normal">AssisChat</Title>
@@ -143,7 +143,7 @@ export default function Home() {
                 alt="Lofyee App"
               />
               <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
-                <Subtitle className="mt-auto self-end text-sm">
+                <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个 Lo-Fi 播放器
                 </Subtitle>
                 <Title className="self-end font-normal">Lofyee</Title>
@@ -172,17 +172,18 @@ export default function Home() {
               <Subtitle>github.com</Subtitle>
               <Title className="">技术分享</Title>
             </Card>
+
             <Label className="col-span-2 mt-4">在玩什么</Label>
             <Card className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10">
               <Title className="text-blue-500">TypeScript</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 等。
               </Subtitle>
               <SiTypescript className="mt-auto h-10 w-10 self-end text-blue-500" />
             </Card>
             <Card className="flex aspect-square flex-col bg-orange-300/10 dark:bg-orange-400/10">
               <Title className="text-orange-500">Swift</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine
                 。
               </Subtitle>
@@ -190,41 +191,41 @@ export default function Home() {
             </Card>
             <Card className="flex aspect-square flex-col bg-yellow-300/10 dark:bg-yellow-400/10">
               <Title className="text-yellow-500">Sketch</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 偶尔也弄弄设计, 但不太熟。现在用 Figma 比较多。
               </Subtitle>
               <SiSketch className="mt-auto h-10 w-10 self-end text-yellow-500" />
             </Card>
             <Card className="flex aspect-square flex-col bg-orange-300/10 dark:bg-orange-400/10">
               <Title className="text-orange-500">Blender</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。
               </Subtitle>
               <SiBlender className="mt-auto h-10 w-10 self-end text-orange-500" />
             </Card>
             <Card className="flex aspect-square flex-col bg-red-300/10 dark:bg-red-400/10">
               <Title className="text-red-500">Switch</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 有一台 Switch, 但上面很多灰, 还有一台灰更多的 PS4 。
               </Subtitle>
               <SiNintendoswitch className="mt-auto h-10 w-10 self-end text-red-500" />
             </Card>
             <Card className="flex aspect-square flex-col bg-cyan-300/10 dark:bg-cyan-400/10">
               <Title className="text-cyan-500">摄影</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 有一台 Sony a7c, 但不知道电池还有没有电。
               </Subtitle>
               <CameraIcon className="mt-auto h-10 w-10 self-end text-cyan-500" />
             </Card>
             <Card className="flex aspect-square flex-col bg-red-300/10 dark:bg-red-400/10">
               <Title className="text-red-500">Netflix</Title>
-              <Subtitle className="">
+              <Subtitle className="mb-5">
                 闲暇无事的时候会看看剧, 经常使用 Netflix 和 Apple TV+。
               </Subtitle>
               <SiNetflix className="mt-auto h-10 w-10 self-end text-red-500" />
             </Card>
             <footer className="text-md col-span-2 py-10 text-center text-sm opacity-60">
-              © 2022 Nooc
+              © 2023 Nooc
             </footer>
           </div>
         </div>
