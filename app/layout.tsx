@@ -17,6 +17,16 @@ export const metadata: Metadata = {
     "Nooc 的个人主页",
     "Bento",
   ],
+  openGraph: {
+    title: `Nooc's World`,
+    description: `Nooc's World`,
+  },
+  twitter: {
+    title: `Nooc's World`,
+    description: `Nooc's World`,
+    site: "@noobnooc",
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
