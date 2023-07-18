@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Noob Nooc",
     "Homepage",
     "Portfolio",
+    "个人主页",
+    "Nooc 的个人主页",
+    "Bento",
   ],
 };
 
