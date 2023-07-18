@@ -1,10 +1,8 @@
-'use client';
+"use client";
 
 import Card from "./card";
 import Image from "next/image";
-import {
-  ArrowPathRoundedSquareIcon,
-} from "@heroicons/react/24/solid";
+import { ArrowPathRoundedSquareIcon } from "@heroicons/react/24/solid";
 import avatar from "../public/avatar.png";
 import twitterVerified from "../public/twitter-verified.svg";
 import BackgroundGradient from "./background-gradient";
@@ -23,12 +21,12 @@ export default function ProfileCard({ className }: { className?: string }) {
     <FlippableCard
       className={classNames("relative", className)}
       front={
-        <Card className="flex h-full flex-col items-center justify-center bg-indigo-200/10 py-40 sm:py-20">
+        <Card className="flex h-full flex-col items-center justify-center py-40 sm:py-20">
           <Image className="h-16 w-16 rounded-full" src={avatar} alt="Avatar" />
           <p className="relative mt-2 items-end text-xl">
             Nooc
             <Image
-              className="absolute top-0 bottom-0 -right-6 my-auto h-5 w-5"
+              className="absolute -right-6 bottom-0 top-0 my-auto h-5 w-5"
               // ?
               src={twitterVerified.src}
               height={100}
@@ -39,7 +37,7 @@ export default function ProfileCard({ className }: { className?: string }) {
           <p className="mt-2 opacity-60">游离于存在与虚无间的理想主义者</p>
 
           <button
-            className="absolute right-5 bottom-5 rounded-full border border-gray-400/20 bg-white/40 p-3 dark:border-white/30 dark:bg-black/40"
+            className="absolute bottom-5 right-5 rounded-full border border-gray-400/20 bg-white/40 p-3 dark:border-white/30 dark:bg-black/40"
             onClick={() => toggle()}
           >
             <ArrowPathRoundedSquareIcon className="h-5 w-5 opacity-60" />
@@ -47,7 +45,7 @@ export default function ProfileCard({ className }: { className?: string }) {
         </Card>
       }
       back={
-        <Card className="flex h-full flex-col items-center justify-center bg-violet-200/10">
+        <Card className="flex h-full flex-col items-center justify-center">
           <div>
             <p>一个人。</p>
 
@@ -68,7 +66,7 @@ export default function ProfileCard({ className }: { className?: string }) {
           </div>
 
           <button
-            className="absolute right-5 bottom-5 rounded-full border border-gray-400/20 bg-white/30 p-3 dark:border-white/30 dark:bg-black/40"
+            className="absolute bottom-5 right-5 rounded-full border border-gray-400/20 bg-white/30 p-3 dark:border-white/30 dark:bg-black/40"
             onClick={() => toggle()}
           >
             <ArrowPathRoundedSquareIcon className="h-5 w-5 opacity-60" />
@@ -76,8 +74,6 @@ export default function ProfileCard({ className }: { className?: string }) {
         </Card>
       }
       flipped={flipped}
-    >
-      <BackgroundGradient className="bottom-0 right-0 h-36 w-16 bg-green-500/50 duration-500 dark:bg-amber-400/50" />
-    </FlippableCard>
+    ></FlippableCard>
   );
 }

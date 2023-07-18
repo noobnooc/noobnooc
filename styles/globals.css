@@ -20,9 +20,3 @@ a {
   font-family: "Space Grotesk", var(--font-space-grotesk), SF Pro,
     var(--font-xwwk), Inter, Avenir, Helvetica, Arial, sans-serif, -apple-system;
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-  }
-}
