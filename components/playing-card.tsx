@@ -1,18 +1,14 @@
+'use client';
+
 import Card from "./card";
-import Image from "next/image";
-import { CameraIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { CameraIcon } from "@heroicons/react/24/solid";
 import {
-  Blender,
-  Github,
-  Instagram,
-  Javascript,
-  Netflix,
-  Nintendoswitch,
-  ReactJs,
-  Sketch,
-  Swift,
-  Twitter,
-  Typescript,
+  SiBlender,
+  SiNetflix,
+  SiNintendoswitch,
+  SiSketch,
+  SiSwift,
+  SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import classNames from "classnames";
@@ -21,29 +17,29 @@ import { useState } from "react";
 const items = [
   {
     name: "typescript",
-    icon: <Typescript className="h-6 w-6" />,
+    icon: <SiTypescript className="h-6 w-6" />,
     summary:
       "TypeScript, 最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 。",
   },
   {
     name: "swift",
-    icon: <Swift className="h-6 w-6" />,
+    icon: <SiSwift className="h-6 w-6" />,
     summary:
       "Swift, 最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine 。",
   },
   {
     name: "sketch",
-    icon: <Sketch className="h-6 w-6" />,
+    icon: <SiSketch className="h-6 w-6" />,
     summary: "Sketch, 偶尔也弄弄设计, 但不太熟。",
   },
   {
     name: "blender",
-    icon: <Blender className="h-7 w-7" />,
+    icon: <SiBlender className="h-7 w-7" />,
     summary: "Blender, 尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。",
   },
   {
     name: "switch",
-    icon: <Nintendoswitch className="h-6 w-6" />,
+    icon: <SiNintendoswitch className="h-6 w-6" />,
     summary: "有一台 Switch, 但上面很多灰, 还有一台灰更多的 PS4 。",
   },
   {
@@ -53,7 +49,7 @@ const items = [
   },
   {
     name: "netflix",
-    icon: <Netflix className="h-6 w-6" />,
+    icon: <SiNetflix className="h-6 w-6" />,
     summary: "闲暇无事的时候会看看剧, 经常使用 Netflix 和 Apple TV+。",
   },
 ];

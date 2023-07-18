@@ -1,13 +1,13 @@
 import Card from "./card";
 import Image from "next/image";
-import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 import classNames from "classnames";
 import SubjectiveWorld from "../public/subjective-world.png";
 
 const items = [
   {
     name: "github",
-    icon: <Github className="h-11 w-11 rounded-lg bg-black p-1 text-white" />,
+    icon: <SiGithub className="h-11 w-11 rounded-lg bg-black p-1 text-white" />,
     url: "https://github.com/noobnooc/noobnooc/discussions",
     title: "技术分享",
     summary: <>分享一些技术</>,

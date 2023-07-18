@@ -1,10 +1,10 @@
+'use client';
+
 import Card from "./card";
 import Image from "next/image";
 import {
   ArrowPathRoundedSquareIcon,
-  EnvelopeIcon,
 } from "@heroicons/react/24/solid";
-import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import avatar from "../public/avatar.png";
 import twitterVerified from "../public/twitter-verified.svg";
 import BackgroundGradient from "./background-gradient";

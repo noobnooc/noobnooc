@@ -1,7 +1,5 @@
 import Card from "./card";
 import Image from "next/image";
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
 import AssisChat from "../public/assischat.png";
 import lofyee from "../public/lofyee.png";
 import { useState } from "react";
@@ -33,10 +31,6 @@ const items = [
 ];
 
 export default function DoingCard({ className }: { className?: string }) {
-  const [selectedItem, setSelectedItem] = useState<
-    typeof items[number] | undefined
-  >();
-
   return (
     <Card
       className={classNames(

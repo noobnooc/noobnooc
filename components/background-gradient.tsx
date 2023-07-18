@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { motion } from "framer-motion";
 
 export default function BackgroundGradient({
   className,

@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-[![Website Status](https://img.shields.io/website?label=https://www.nooc.ink&down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.nooc.ink)](https://www.nooc.ink)
+[![Website Status](https://img.shields.io/website?label=https://www.nooc.me&down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.nooc.me)](https://www.nooc.me)
 ![](https://komarev.com/ghpvc/?username=noobnooc&color=brightgreen)
 
 - 🔭 I’m currently working on emo
