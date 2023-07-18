@@ -3,8 +3,8 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nooc's World",
-  description: "Nooc's World",
+  title: "Nooc 的主页",
+  description: "Nooc 的主页",
   keywords: [
     "Nooc",
     "noobnooc",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "Bento",
   ],
   openGraph: {
-    title: `Nooc's World`,
-    description: `Nooc's World`,
+    title: `Nooc 的主页`,
+    description: `Nooc 的主页`,
   },
   twitter: {
-    title: `Nooc's World`,
-    description: `Nooc's World`,
+    title: `Nooc 的主页`,
+    description: `Nooc 的主页`,
     site: "@noobnooc",
     card: "summary_large_image",
   },
