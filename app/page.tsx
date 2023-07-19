@@ -60,7 +60,7 @@ export default function Home() {
     <div className="relative isolate h-full flex-col">
       <main className="h-full justify-center px-4 py-16">
         <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 items-start gap-4 sm:grid-cols-2">
-          <ProfileCard className="top-16 aspect-auto self-start sm:sticky sm:aspect-square" />
+          <ProfileCard className="aspect-auto self-start sm:sticky sm:top-16 sm:aspect-square" />
           <div className="grid grid-cols-2 gap-4 self-start">
             <Card
               className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10"

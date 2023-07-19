@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh" className="h-full">
-      <body className="h-full overflow-auto bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
+      <body className="h-full bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
         {children}
       </body>
     </html>
