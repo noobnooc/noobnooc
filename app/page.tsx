@@ -23,7 +23,10 @@ import blankAvatar from "../public/avatars/blank.jpeg";
 import jiaZombieAvatar from "../public/avatars/jiazombie.png";
 import liunengAvatar from "../public/avatars/liuneng.jpg";
 import pilotAvatar from "../public/avatars/pilot.jpg";
+import gartnerAvatar from "../public/avatars/gartner.jpg";
 import anonymousAvatar from "../public/avatars/anonymous.jpeg";
+import xiaochengAvatar from "../public/avatars/xiaocheng.jpg";
+import changefengAvatar from "../public/avatars/changfeng.jpg";
 
 const playingItems = [
   {
@@ -81,11 +84,32 @@ const comments = [
     link: "https://twitter.com/B58B30/status/1681495228484829184?s=20",
   },
   {
+    name: "Gartner",
+    comment: "地球没了你，太阳照常升起。",
+    avatar: gartnerAvatar,
+    color: "cyan",
+    link: "https://twitter.com/gartner_feel/status/1681560096336396291?s=20",
+  },
+  {
     name: "象牙山刘能",
     comment: "洛阳亲友如相问，一支红杏出墙来。",
     avatar: liunengAvatar,
     color: "yellow",
     link: "https://twitter.com/disksing/status/1681508115861344256?s=20",
+  },
+  {
+    name: "象牙山小成",
+    comment: "不认识，路过",
+    avatar: xiaochengAvatar,
+    color: "pink",
+    link: "https://twitter.com/heavenclouder/status/1681552028634599424?s=20",
+  },
+  {
+    name: "巧月长风📷",
+    comment: "我爱你",
+    avatar: changefengAvatar,
+    color: "teal",
+    link: "https://v.douyin.com/iXoWRJq/",
   },
   {
     name: "假僵尸",
