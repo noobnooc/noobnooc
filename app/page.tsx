@@ -20,25 +20,6 @@ import quwu from "../public/quwu.png";
 import { shuffleArray } from "../lib/array";
 import { COMMENTS } from "../data/comments";
 
-const bottomNavItems = [
-  {
-    name: "主观世界",
-    link: "https://subnooc.com",
-  },
-  {
-    name: "趣物",
-    link: "https://quwu.io",
-  },
-  {
-    name: "AssisChat",
-    link: "https://assischat.com",
-  },
-  {
-    name: "Lofyee",
-    link: "https://lofyee.com",
-  },
-];
-
 const playingItems = [
   {
     name: "TypeScript",
@@ -87,7 +68,9 @@ function Title({
   children: ReactNode;
 }) {
   return (
-    <h1 className={twMerge("text-lg font-bold", className)}>{children}</h1>
+    <h1 className={twMerge("text-base font-bold sm:text-lg", className)}>
+      {children}
+    </h1>
   );
 }
 
@@ -98,7 +81,11 @@ function Subtitle({
   className?: string;
   children: ReactNode;
 }) {
-  return <h2 className={twMerge("opacity-60", className)}>{children}</h2>;
+  return (
+    <h2 className={twMerge("text-sm opacity-60 sm:text-base", className)}>
+      {children}
+    </h2>
+  );
 }
 
 function Label({
@@ -117,12 +104,10 @@ function Label({
 
 export default function Home() {
   return (
-    <div className="relative isolate h-full flex-col">
-      <main className="h-full py-16">
-        <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-4 px-4 sm:grid-cols-2">
-          <div className="">
-            <ProfileCard className="bottom-0 aspect-auto self-start sm:sticky sm:top-16 sm:aspect-square" />
-          </div>
+    <div className="relative isolate flex-col">
+      <main className="mx-auto flex w-full max-w-screen-lg flex-col gap-4 px-4 py-10">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <ProfileCard className="bottom-0 aspect-auto self-start sm:sticky sm:top-10 sm:aspect-square" />
           <div className="grid grid-cols-2 gap-4 self-start">
             <Card
               className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10"
@@ -235,73 +220,60 @@ export default function Home() {
               <Subtitle>github.com</Subtitle>
               <Title className="">技术分享</Title>
             </Card>
-
-            <Label className="col-span-2 mt-4">在玩什么</Label>
-            {playingItems.map((playingItem) => (
-              <Card
-                key={playingItem.name}
-                className={twMerge(
-                  "flex aspect-square flex-col",
-                  `bg-${playingItem.color}-300/10 dark:bg-${playingItem.color}-400/10`
-                )}
-              >
-                <Title className={`text-${playingItem.color}-500`}>
-                  {playingItem.name}
-                </Title>
-                <Subtitle className="mb-5">{playingItem.summary}</Subtitle>
-                <playingItem.icon
-                  className={twMerge(
-                    "mt-auto h-10 w-10 self-end",
-                    `text-${playingItem.color}-500`
-                  )}
-                />
-              </Card>
-            ))}
-          </div>
-
-          <Label className="mt-4 sm:col-span-2">他们说</Label>
-          <div className="grid grid-cols-2 gap-4 sm:col-span-2 sm:grid-cols-3">
-            {shuffleArray(COMMENTS)
-              .slice(0, 6)
-              .map((comment) => (
-                <Card
-                  key={comment.name}
-                  className={twMerge(
-                    "flex aspect-square flex-col justify-between sm:aspect-video",
-                    `bg-${comment.color}-300/10 dark:bg-${comment.color}-400/10`
-                  )}
-                  link={comment.link}
-                >
-                  <div className="flex justify-between">
-                    <Title className={`text-${comment.color}-500`}>
-                      {comment.name}
-                    </Title>
-                    <Image
-                      className="h-12 w-12 rounded-full"
-                      src={comment.avatar}
-                      alt={comment.name}
-                    />
-                  </div>
-                  <Subtitle className="mt-4">{comment.comment}</Subtitle>
-                </Card>
-              ))}
           </div>
         </div>
-        <footer className="text-md col-span-2 mt-20 bg-white text-sm opacity-60 dark:bg-black">
-          <hr />
-          <div className="mx-auto flex w-full max-w-screen-lg flex-col justify-between gap-4 px-4 py-10 sm:flex-row">
-            <nav>
-              <ul className="flex gap-4">
-                {bottomNavItems.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.link}>{item.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <p className="opacity-80">© 2023 Nooc</p>
-          </div>
-        </footer>
+
+        <Label className="mt-4">在玩什么</Label>
+        <div className="grid grid-cols-2 gap-4 sm:col-span-2 sm:grid-cols-3">
+          {playingItems.map((playingItem) => (
+            <Card
+              key={playingItem.name}
+              className={twMerge(
+                "flex aspect-square flex-col sm:aspect-video",
+                `bg-${playingItem.color}-300/10 dark:bg-${playingItem.color}-400/10`
+              )}
+            >
+              <Title className={`text-${playingItem.color}-500`}>
+                {playingItem.name}
+              </Title>
+              <Subtitle className="mb-5">{playingItem.summary}</Subtitle>
+              <playingItem.icon
+                className={twMerge(
+                  "mt-auto h-10 w-10 self-end",
+                  `text-${playingItem.color}-500`
+                )}
+              />
+            </Card>
+          ))}
+        </div>
+
+        <Label className="mt-4">他们说</Label>
+        <div className="grid grid-cols-2 gap-4 sm:col-span-2 sm:grid-cols-3">
+          {shuffleArray(COMMENTS)
+            .slice(0, 6)
+            .map((comment) => (
+              <Card
+                key={comment.name}
+                className={twMerge(
+                  "flex aspect-square flex-col justify-between sm:aspect-video",
+                  `bg-${comment.color}-300/10 dark:bg-${comment.color}-400/10`
+                )}
+                link={comment.link}
+              >
+                <div className="flex justify-between gap-2">
+                  <Title className={`text-${comment.color}-500`}>
+                    {comment.name}
+                  </Title>
+                  <Image
+                    className="h-8 w-8 rounded-full sm:h-12 sm:w-12"
+                    src={comment.avatar}
+                    alt={comment.name}
+                  />
+                </div>
+                <Subtitle className="mt-4 text-sm">{comment.comment}</Subtitle>
+              </Card>
+            ))}
+        </div>
       </main>
     </div>
   );

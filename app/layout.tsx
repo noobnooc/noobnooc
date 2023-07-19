@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 
 import { Metadata } from "next";
+import Image from "next/image";
+import avatar from "../public/avatar.png";
 
 export const metadata: Metadata = {
   title: "Nooc 的主页",
@@ -29,6 +31,25 @@ export const metadata: Metadata = {
   },
 };
 
+const bottomNavItems = [
+  {
+    name: "主观世界",
+    link: "https://subnooc.com",
+  },
+  {
+    name: "趣物",
+    link: "https://quwu.io",
+  },
+  {
+    name: "AssisChat",
+    link: "https://assischat.com",
+  },
+  {
+    name: "Lofyee",
+    link: "https://lofyee.com",
+  },
+];
+
 export default function RootLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
@@ -37,9 +58,48 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh" className="h-full">
-      <body className="h-full bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
+    <html lang="zh" className="">
+      <body className="bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
+        <header className="text-md bg-white/80 dark:bg-black/80">
+          <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between gap-4 px-4 py-6">
+            <div className="flex items-center gap-4">
+              <Image
+                className="h-8 w-8 rounded-lg"
+                src={avatar}
+                alt="Nooc Avatar"
+              />
+              <h1 className="font-bold opacity-80 sm:inline">Nooc 的主页</h1>
+            </div>
+            <nav className="font-light">
+              <ul className="flex gap-4">
+                {bottomNavItems.slice(0, 0).map((item) => (
+                  <li key={item.name}>
+                    <a href={item.link}>{item.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+          <hr />
+        </header>
+
         {children}
+
+        <footer className="text-md bg-white/80 text-sm dark:bg-black/80">
+          <hr />
+          <div className="mx-auto flex w-full max-w-screen-lg flex-col justify-between gap-4 px-4 py-10 sm:flex-row">
+            <nav className="opacity-80">
+              <ul className="flex gap-4">
+                {bottomNavItems.map((item) => (
+                  <li key={item.name}>
+                    <a href={item.link}>{item.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <p className="opacity-60">© 2023 Nooc</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
