@@ -57,10 +57,10 @@ function Label({
 
 export default function Home() {
   return (
-    <div className="relative isolate h-full flex-col overflow-hidden">
-      <main className="h-full justify-center overflow-auto px-4 py-16">
+    <div className="relative isolate h-full flex-col">
+      <main className="h-full justify-center px-4 py-16">
         <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 items-start gap-4 sm:grid-cols-2">
-          <ProfileCard className="top-0 aspect-auto self-start sm:sticky sm:aspect-square" />
+          <ProfileCard className="top-16 aspect-auto self-start sm:sticky sm:aspect-square" />
           <div className="grid grid-cols-2 gap-4 self-start">
             <Card
               className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10"
@@ -110,7 +110,7 @@ export default function Home() {
                 src={quwu}
                 alt="Quwu Logo"
               />
-              <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
+              <div className="mt-auto flex flex-col items-end self-end overflow-hidden rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
                 <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个收集有趣物品的网站
                 </Subtitle>
