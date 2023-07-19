@@ -2,21 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Space Grotesk", SF Pro, Inter, Avenir, Helvetica, Arial,
-    sans-serif, -apple-system;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Space Grotesk", var(--font-space-grotesk), SF Pro,
-    var(--font-xwwk), Inter, Avenir, Helvetica, Arial, sans-serif, -apple-system;
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply dark:border-neutral-700;
+  }
 }

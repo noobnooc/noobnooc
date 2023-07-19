@@ -11,6 +11,9 @@ const reservedColors = [
   "indigo",
   "purple",
   "pink",
+  "cyan",
+  "rose",
+  "amber",
 ];
 
 module.exports = {

@@ -25,6 +25,52 @@ import liunengAvatar from "../public/avatars/liuneng.jpg";
 import pilotAvatar from "../public/avatars/pilot.jpg";
 import anonymousAvatar from "../public/avatars/anonymous.jpeg";
 
+const playingItems = [
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    summary: "最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 等。",
+    color: "blue",
+  },
+  {
+    name: "Swift",
+    icon: SiSwift,
+    summary:
+      "最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine 。",
+    color: "amber",
+  },
+  {
+    name: "Sketch",
+    icon: SiSketch,
+    summary: "偶尔也弄弄设计, 但不太熟。现在用 Figma 比较多。",
+    color: "yellow",
+  },
+  {
+    name: "Blender",
+    icon: SiBlender,
+    summary: "尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。",
+    color: "orange",
+  },
+  {
+    name: "Switch",
+    icon: SiNintendoswitch,
+    summary: "有一台 Switch, 但上面很多灰, 还有一台灰更多的 PS4 。",
+    color: "rose",
+  },
+  {
+    name: "摄影",
+    icon: CameraIcon,
+    summary: "有一台 Sony a7c, 但不知道电池还有没有电。",
+    color: "cyan",
+  },
+  {
+    name: "Netflix",
+    icon: SiNetflix,
+    summary: "闲暇无事的时候会看看剧, 经常使用 Netflix 和 Apple TV+。",
+    color: "red",
+  },
+];
+
 const comments = [
   {
     name: "Blank",
@@ -226,57 +272,28 @@ export default function Home() {
             </Card>
 
             <Label className="col-span-2 mt-4">在玩什么</Label>
-            <Card className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10">
-              <Title className="text-blue-500">TypeScript</Title>
-              <Subtitle className="mb-5">
-                最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 等。
-              </Subtitle>
-              <SiTypescript className="mt-auto h-10 w-10 self-end text-blue-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-orange-300/10 dark:bg-orange-400/10">
-              <Title className="text-orange-500">Swift</Title>
-              <Subtitle className="mb-5">
-                最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine
-                。
-              </Subtitle>
-              <SiSwift className="mt-auto h-10 w-10 self-end text-orange-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-yellow-300/10 dark:bg-yellow-400/10">
-              <Title className="text-yellow-500">Sketch</Title>
-              <Subtitle className="mb-5">
-                偶尔也弄弄设计, 但不太熟。现在用 Figma 比较多。
-              </Subtitle>
-              <SiSketch className="mt-auto h-10 w-10 self-end text-yellow-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-orange-300/10 dark:bg-orange-400/10">
-              <Title className="text-orange-500">Blender</Title>
-              <Subtitle className="mb-5">
-                尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。
-              </Subtitle>
-              <SiBlender className="mt-auto h-10 w-10 self-end text-orange-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-red-300/10 dark:bg-red-400/10">
-              <Title className="text-red-500">Switch</Title>
-              <Subtitle className="mb-5">
-                有一台 Switch, 但上面很多灰, 还有一台灰更多的 PS4 。
-              </Subtitle>
-              <SiNintendoswitch className="mt-auto h-10 w-10 self-end text-red-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-cyan-300/10 dark:bg-cyan-400/10">
-              <Title className="text-cyan-500">摄影</Title>
-              <Subtitle className="mb-5">
-                有一台 Sony a7c, 但不知道电池还有没有电。
-              </Subtitle>
-              <CameraIcon className="mt-auto h-10 w-10 self-end text-cyan-500" />
-            </Card>
-            <Card className="flex aspect-square flex-col bg-red-300/10 dark:bg-red-400/10">
-              <Title className="text-red-500">Netflix</Title>
-              <Subtitle className="mb-5">
-                闲暇无事的时候会看看剧, 经常使用 Netflix 和 Apple TV+。
-              </Subtitle>
-              <SiNetflix className="mt-auto h-10 w-10 self-end text-red-500" />
-            </Card>
+            {playingItems.map((playingItem) => (
+              <Card
+                key={playingItem.name}
+                className={twMerge(
+                  "flex aspect-square flex-col",
+                  `bg-${playingItem.color}-300/10 dark:bg-${playingItem.color}-400/10`
+                )}
+              >
+                <Title className={`text-${playingItem.color}-500`}>
+                  {playingItem.name}
+                </Title>
+                <Subtitle className="mb-5">{playingItem.summary}</Subtitle>
+                <playingItem.icon
+                  className={twMerge(
+                    "mt-auto h-10 w-10 self-end",
+                    `text-${playingItem.color}-500`
+                  )}
+                />
+              </Card>
+            ))}
           </div>
+
           <Label className="mt-4 sm:col-span-2">他们说</Label>
           <div className="grid grid-cols-2 gap-4 sm:col-span-2 sm:grid-cols-3">
             {comments.map((comment) => (
