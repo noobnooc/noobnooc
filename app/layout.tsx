@@ -3,29 +3,20 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
+import { SEO } from "../data/seo";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nooc 的主页",
-  description: "Nooc 的主页",
-  keywords: [
-    "Nooc",
-    "noobnooc",
-    "noocink",
-    "nookinc",
-    "Noob Nooc",
-    "Homepage",
-    "Portfolio",
-    "个人主页",
-    "Nooc 的个人主页",
-    "Bento",
-  ],
+  title: SEO.title,
+  description: SEO.description,
+  keywords: SEO.fillKeywords(),
   openGraph: {
-    title: `Nooc 的主页`,
-    description: `Nooc 的主页`,
+    title: SEO.title,
+    description: SEO.description,
   },
   twitter: {
-    title: `Nooc 的主页`,
-    description: `Nooc 的主页`,
+    title: SEO.title,
+    description: SEO.description,
     site: "@noobnooc",
     card: "summary_large_image",
   },
@@ -61,22 +52,24 @@ export default function RootLayout({
     <html lang="zh" className="">
       <body className="bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
         <header className="text-md bg-white/80 dark:bg-black/80">
+          <hr />
           <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between gap-4 px-4 py-6">
-            <div className="flex items-center gap-4">
+            <Link className="flex items-center gap-4" href="/">
               <Image
                 className="h-8 w-8 rounded-lg"
                 src={avatar}
                 alt="Nooc Avatar"
               />
               <h1 className="font-bold opacity-80 sm:inline">Nooc 的主页</h1>
-            </div>
+            </Link>
             <nav className="font-light">
               <ul className="flex gap-4">
-                {bottomNavItems.slice(0, 0).map((item) => (
-                  <li key={item.name}>
-                    <a href={item.link}>{item.name}</a>
-                  </li>
-                ))}
+                <li>
+                  <Link href="/">主页</Link>
+                </li>
+                <li>
+                  <Link href="/projects">项目</Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -99,6 +92,7 @@ export default function RootLayout({
             </nav>
             <p className="opacity-60">© 2023 Nooc</p>
           </div>
+          <hr />
         </footer>
       </body>
     </html>

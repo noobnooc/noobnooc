@@ -23,6 +23,7 @@ module.exports = {
       `text-${name}-500`,
       `bg-${name}-300/10`,
       `dark:bg-${name}-400/10`,
+      `bg-${name}-500`,
     ]),
   ],
   theme: {},
