@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: yarn set version berry && yarn --immutable
+        run: npm install
 
       - name: Lint
-        run: yarn lint
+        run: npm run lint
 
       - name: Build
-        run: yarn build
+        run: npm run build
