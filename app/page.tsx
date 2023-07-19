@@ -18,6 +18,55 @@ import AssisChat from "../public/assischat.png";
 import lofyee from "../public/lofyee.png";
 import subnooc from "../public/subnooc.png";
 import quwu from "../public/quwu.png";
+import avatar from "../public/avatar.png";
+import blankAvatar from "../public/avatars/blank.jpeg";
+import jiaZombieAvatar from "../public/avatars/jiazombie.png";
+import liunengAvatar from "../public/avatars/liuneng.jpg";
+import pilotAvatar from "../public/avatars/pilot.jpg";
+import anonymousAvatar from "../public/avatars/anonymous.jpeg";
+
+const comments = [
+  {
+    name: "Blank",
+    comment:
+      "天啊，这么精致的小男生如果还是单身那我觉得你附近的女孩子都得去看眼科",
+    avatar: blankAvatar,
+    color: "neutral",
+    link: "https://twitter.com/B58B30/status/1681495228484829184?s=20",
+  },
+  {
+    name: "象牙山刘能",
+    comment: "洛阳亲友如相问，一支红杏出墙来。",
+    avatar: liunengAvatar,
+    color: "yellow",
+    link: "https://twitter.com/disksing/status/1681508115861344256?s=20",
+  },
+  {
+    name: "假僵尸",
+    comment: "皆九年之学，论秀，吾不及汝",
+    avatar: jiaZombieAvatar,
+    color: "green",
+    link: "https://github.com/JiaZombie",
+  },
+  {
+    name: "机长",
+    comment: "成都不能没有你，就像西方不能没有耶路撒冷",
+    avatar: pilotAvatar,
+    color: "neutral",
+  },
+  {
+    name: "不愿透露姓名的王先生",
+    comment: "孩子是无辜的，为了孩子，回来吧。",
+    avatar: anonymousAvatar,
+    color: "red",
+  },
+  {
+    name: "Nooc",
+    comment: "你们在说什么。。。",
+    avatar: avatar,
+    color: "blue",
+  },
+];
 
 function Title({
   className,
@@ -59,8 +108,10 @@ export default function Home() {
   return (
     <div className="relative isolate h-full flex-col">
       <main className="h-full justify-center px-4 py-16">
-        <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 items-start gap-4 sm:grid-cols-2">
-          <ProfileCard className="aspect-auto self-start sm:sticky sm:top-16 sm:aspect-square" />
+        <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="">
+            <ProfileCard className="bottom-0 aspect-auto self-start sm:sticky sm:top-16 sm:aspect-square" />
+          </div>
           <div className="grid grid-cols-2 gap-4 self-start">
             <Card
               className="flex aspect-square flex-col bg-blue-300/10 dark:bg-blue-400/10"
@@ -68,7 +119,7 @@ export default function Home() {
             >
               <Title className="text-blue-500">Twitter</Title>
               <Subtitle>@noobnooc</Subtitle>
-              <SiTwitter className="mt-auto h-10 w-10 self-end text-blue-500" />
+              <SiTwitter className="mt-auto h-10 w-10 self-end text-blue-500 sm:h-14 sm:w-14" />
             </Card>
             <Card
               className="flex aspect-square flex-col bg-neutral-300/10 dark:bg-neutral-400/10"
@@ -76,14 +127,14 @@ export default function Home() {
             >
               <Title className="self-end">GitHub</Title>
               <Subtitle className="self-end">@noobnooc</Subtitle>
-              <SiGithub className="mt-auto h-10 w-10" />
+              <SiGithub className="mt-auto h-10 w-10 sm:h-14 sm:w-14" />
             </Card>
             <Card
               className="flex aspect-square flex-col bg-yellow-300/10 dark:bg-yellow-400/10"
               link="https://okjk.co/P0XWwf"
             >
               <Image
-                className="mb-auto h-10 w-10 self-end"
+                className="mb-auto h-10 w-10 self-end sm:h-14 sm:w-14"
                 alt="Jike Icon"
                 width="256"
                 height={256}
@@ -96,7 +147,7 @@ export default function Home() {
               className="flex aspect-square flex-col bg-green-300/10 dark:bg-green-400/10"
               link="mailto:nooc@nooc.me"
             >
-              <EnvelopeIcon className="mb-auto h-10 w-10 text-green-500" />
+              <EnvelopeIcon className="mb-auto h-10 w-10 text-green-500 sm:h-14 sm:w-14" />
               <Subtitle className="self-end">nooc@nooc.me</Subtitle>
               <Title className="self-end text-green-500">邮箱</Title>
             </Card>
@@ -110,7 +161,7 @@ export default function Home() {
                 src={quwu}
                 alt="Quwu Logo"
               />
-              <div className="mt-auto flex flex-col items-end self-end overflow-hidden rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
+              <div className="mt-auto flex flex-col items-end self-end overflow-hidden rounded-lg bg-white/80 px-3 py-1 shadow dark:bg-black/50">
                 <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个收集有趣物品的网站
                 </Subtitle>
@@ -126,7 +177,7 @@ export default function Home() {
                 src={AssisChat}
                 alt="AssisChat App"
               />
-              <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
+              <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 shadow dark:bg-black/50">
                 <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个 ChatGPT 客户端
                 </Subtitle>
@@ -142,20 +193,21 @@ export default function Home() {
                 src={lofyee}
                 alt="Lofyee App"
               />
-              <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 dark:bg-black/50">
+              <div className="mt-auto flex flex-col items-end self-end rounded-lg bg-white/80 px-3 py-1 shadow dark:bg-black/50">
                 <Subtitle className="mt-auto hidden self-end text-sm sm:block">
                   一个 Lo-Fi 播放器
                 </Subtitle>
                 <Title className="self-end font-normal">Lofyee</Title>
               </div>
             </Card>
+
             <Label className="col-span-2 mt-4">在写什么</Label>
             <Card
               className="flex aspect-square flex-col bg-red-300/10 dark:bg-red-400/10"
               link="https://subnooc.com"
             >
               <Image
-                className="mb-auto h-16 w-16 self-end rounded-lg"
+                className="mb-auto h-12 w-12 self-end rounded-lg border sm:h-16 sm:w-16"
                 alt="Subnooc Icon"
                 width="256"
                 height={256}
@@ -168,7 +220,7 @@ export default function Home() {
               className="flex aspect-square flex-col bg-neutral-300/10 dark:bg-neutral-400/10"
               link="https://github.com/noobnooc/noobnooc/discussions"
             >
-              <SiGithub className="mb-auto box-border h-16 w-16 self-end rounded-lg bg-black p-2 text-white" />
+              <SiGithub className="mb-auto box-border h-12 w-12 self-end rounded-lg border bg-black p-2 text-white sm:h-16 sm:w-16" />
               <Subtitle>github.com</Subtitle>
               <Title className="">技术分享</Title>
             </Card>
@@ -224,11 +276,36 @@ export default function Home() {
               </Subtitle>
               <SiNetflix className="mt-auto h-10 w-10 self-end text-red-500" />
             </Card>
-            <footer className="text-md col-span-2 py-10 text-center text-sm opacity-60">
-              © 2023 Nooc
-            </footer>
+          </div>
+          <Label className="mt-4 sm:col-span-2">他们说</Label>
+          <div className="grid grid-cols-2 gap-4 sm:col-span-2 sm:grid-cols-3">
+            {comments.map((comment) => (
+              <Card
+                key={comment.name}
+                className={twMerge(
+                  "flex aspect-square flex-col justify-between sm:aspect-video",
+                  `bg-${comment.color}-300/10 dark:bg-${comment.color}-400/10`
+                )}
+                link={comment.link}
+              >
+                <div className="flex justify-between">
+                  <Title className={`text-${comment.color}-500`}>
+                    {comment.name}
+                  </Title>
+                  <Image
+                    className="h-12 w-12 rounded-full"
+                    src={comment.avatar}
+                    alt={comment.name}
+                  />
+                </div>
+                <Subtitle className="mt-4">{comment.comment}</Subtitle>
+              </Card>
+            ))}
           </div>
         </div>
+        <footer className="text-md col-span-2 py-20 text-center text-sm opacity-60">
+          © 2023 Nooc
+        </footer>
       </main>
     </div>
   );
