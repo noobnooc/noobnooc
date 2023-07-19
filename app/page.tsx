@@ -2,7 +2,6 @@ import { CameraIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import {
   SiBlender,
   SiGithub,
-  SiNetflix,
   SiNintendoswitch,
   SiSketch,
   SiSwift,
@@ -20,6 +19,25 @@ import subnooc from "../public/subnooc.png";
 import quwu from "../public/quwu.png";
 import { shuffleArray } from "../lib/array";
 import { COMMENTS } from "../data/comments";
+
+const bottomNavItems = [
+  {
+    name: "主观世界",
+    link: "https://subnooc.com",
+  },
+  {
+    name: "趣物",
+    link: "https://quwu.io",
+  },
+  {
+    name: "AssisChat",
+    link: "https://assischat.com",
+  },
+  {
+    name: "Lofyee",
+    link: "https://lofyee.com",
+  },
+];
 
 const playingItems = [
   {
@@ -58,12 +76,6 @@ const playingItems = [
     icon: CameraIcon,
     summary: "有一台 Sony a7c, 但不知道电池还有没有电。",
     color: "cyan",
-  },
-  {
-    name: "Netflix",
-    icon: SiNetflix,
-    summary: "闲暇无事的时候会看看剧, 经常使用 Netflix 和 Apple TV+。",
-    color: "red",
   },
 ];
 
@@ -106,8 +118,8 @@ function Label({
 export default function Home() {
   return (
     <div className="relative isolate h-full flex-col">
-      <main className="h-full justify-center px-4 py-16">
-        <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-2">
+      <main className="h-full py-16">
+        <div className="mx-auto grid w-full max-w-screen-lg grid-cols-1 gap-4 px-4 sm:grid-cols-2">
           <div className="">
             <ProfileCard className="bottom-0 aspect-auto self-start sm:sticky sm:top-16 sm:aspect-square" />
           </div>
@@ -275,8 +287,20 @@ export default function Home() {
               ))}
           </div>
         </div>
-        <footer className="text-md col-span-2 py-20 text-center text-sm opacity-60">
-          © 2023 Nooc
+        <footer className="text-md col-span-2 mt-20 bg-white text-sm opacity-60 dark:bg-black">
+          <hr />
+          <div className="mx-auto flex w-full max-w-screen-lg flex-col justify-between gap-4 px-4 py-10 sm:flex-row">
+            <nav>
+              <ul className="flex gap-4">
+                {bottomNavItems.map((item) => (
+                  <li key={item.name}>
+                    <a href={item.link}>{item.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <p className="opacity-80">© 2023 Nooc</p>
+          </div>
         </footer>
       </main>
     </div>
