@@ -51,34 +51,42 @@ export default function RootLayout({
   return (
     <html lang="zh" className="">
       <body className="bg-indigo-50 text-black dark:bg-neutral-900 dark:text-indigo-50">
-        <header className="text-md bg-white/80 dark:bg-black/80">
-          <hr />
-          <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between gap-4 px-4 py-6">
-            <Link className="flex items-center gap-4" href="/">
-              <Image
-                className="h-8 w-8 rounded-lg"
-                src={avatar}
-                alt="Nooc Avatar"
-              />
-              <h1 className="font-bold opacity-80 sm:inline">Nooc 的主页</h1>
-            </Link>
-            <nav className="font-light">
-              <ul className="flex gap-4">
-                <li>
-                  <Link href="/">主页</Link>
-                </li>
-                <li>
-                  <Link href="/projects">项目</Link>
-                </li>
-              </ul>
-            </nav>
+        <header className="text-md h-20">
+          <div className="h-40 w-full">
+            <div className="sticky top-0 z-10 w-full bg-indigo-50  dark:bg-neutral-900">
+              <div className="w-full bg-white/50 dark:bg-indigo-100/5">
+                <hr />
+                <div className="mx-auto flex h-20 w-full max-w-screen-lg items-center justify-between gap-4 px-4 py-6">
+                  <Link className="flex items-center gap-4" href="/">
+                    <Image
+                      className="h-8 w-8 rounded-lg"
+                      src={avatar}
+                      alt="Nooc Avatar"
+                    />
+                    <h1 className="font-bold opacity-80 sm:inline">
+                      Nooc 的主页
+                    </h1>
+                  </Link>
+                  <nav className="font-light">
+                    <ul className="flex gap-4">
+                      <li>
+                        <Link href="/">主页</Link>
+                      </li>
+                      <li>
+                        <Link href="/projects">项目</Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <hr />
+              </div>
+            </div>
           </div>
-          <hr />
         </header>
 
         {children}
 
-        <footer className="text-md bg-white/80 text-sm dark:bg-black/80">
+        <footer className="text-md bg-white/50 text-sm dark:bg-indigo-100/5">
           <hr />
           <div className="mx-auto flex w-full max-w-screen-lg flex-col justify-between gap-4 px-4 py-10 sm:flex-row">
             <nav className="opacity-80">
