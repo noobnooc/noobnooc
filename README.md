@@ -32,10 +32,8 @@
 
 ### Where To Find Me
 
-[![Twitter](https://img.shields.io/badge/Twitter-noobnooc-1DA1F2?logo=Twitter&style=for-the-badge)](https://twitter.com/noobnooc)
-
-[![GitHub](https://img.shields.io/badge/GitHub-noobnooc-181717?logo=GitHub&style=for-the-badge)](https://github.com/noobnooc)
-
+[![Twitter](https://img.shields.io/badge/Twitter-noobnooc-1DA1F2?logo=Twitter&style=for-the-badge)](https://twitter.com/noobnooc)\
+[![GitHub](https://img.shields.io/badge/GitHub-noobnooc-181717?logo=GitHub&style=for-the-badge)](https://github.com/noobnooc)\
 [![Instagram](https://img.shields.io/badge/Instagram-noobnooc-E4405F?logo=Instagram&style=for-the-badge)](https://www.instagram.com/noobnooc/)
 
 <!-- [![YouTube](https://img.shields.io/badge/YouTube-心月在路上Nooc-FF0000?logo=YouTube&logoColor=FF0000&style=for-the-badge)](https://www.youtube.com/channel/UCKCBrQjYOqyJ0SjRD1xTAog)
