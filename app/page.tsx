@@ -22,38 +22,38 @@ const playingItems = [
   {
     name: "TypeScript",
     icon: SiTypescript,
-    summary: "最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 等。",
+    summary: "The most commonly used programming languages, often used together Node / React / Tailwind",
     color: "blue",
   },
   {
     name: "Swift",
     icon: SiSwift,
     summary:
-      "最近在学习苹果生态的程序设计, 常搭配使用的有 SwiftUI / Combine 。",
+      "Recently, I have been learning the programming of Apple's ecology, and I often use SwiftUI / Combine together.",
     color: "amber",
   },
   {
     name: "Sketch",
     icon: SiSketch,
-    summary: "偶尔也弄弄设计, 但不太熟。现在用 Figma 比较多。",
+    summary: "Occasionally fiddle with the design, but not very familiar. Now I use Figma more.",
     color: "yellow",
   },
   {
     name: "Blender",
     icon: SiBlender,
-    summary: "尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。",
+    summary: "I tried to learn many times, and each time I followed the tutorial and gave up.",
     color: "orange",
   },
   {
     name: "Switch",
     icon: SiNintendoswitch,
-    summary: "有一台 Switch, 但上面很多灰, 还有一台灰更多的 PS4 。",
+    summary: "There's a Switch, but there's a lot of gray on top, and there's a PS4 with more gray.",
     color: "rose",
   },
   {
     name: "摄影",
     icon: CameraIcon,
-    summary: "有一台 Sony a7c, 但不知道电池还有没有电。",
+    summary: "There is a Sony a7c, but I don't know if the battery is still charged.",
     color: "cyan",
   },
 ];

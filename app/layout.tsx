@@ -24,11 +24,11 @@ export const metadata: Metadata = {
 
 const bottomNavItems = [
   {
-    name: "主观世界",
+    name: "The Subjective world",
     link: "https://subnooc.com",
   },
   {
-    name: "趣物",
+    name: "Fun Stuffs",
     link: "https://quwu.io",
   },
   {
@@ -64,16 +64,16 @@ export default function RootLayout({
                       alt="Nooc Avatar"
                     />
                     <h1 className="font-bold opacity-80 sm:inline">
-                      Nooc 的主页
+                      Subarna Katwal
                     </h1>
                   </Link>
                   <nav className="font-light">
                     <ul className="flex gap-4">
                       <li>
-                        <Link href="/">主页</Link>
+                        <Link href="/">home page</Link>
                       </li>
                       <li>
-                        <Link href="/projects">项目</Link>
+                        <Link href="/projects">projects</Link>
                       </li>
                     </ul>
                   </nav>

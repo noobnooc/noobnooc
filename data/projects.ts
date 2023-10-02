@@ -5,8 +5,8 @@ import quwu from "../public/quwu.png";
 
 export const PROJECTS = [
   {
-    name: "趣物",
-    summary: "收集有趣物品的网站",
+    name: "funstuff",
+    summary: "A site to collect interesting items",
     image: quwu,
     link: "https://quwu.io",
     color: "amber",
@@ -14,7 +14,7 @@ export const PROJECTS = [
   },
   {
     name: "AssisChat",
-    summary: "ChatGPT 客户端",
+    summary: "ChatGPT Client",
     image: AssisChat,
     link: "https://assischat.com",
     color: "green",
@@ -22,15 +22,15 @@ export const PROJECTS = [
   },
   {
     name: "Lofyee",
-    summary: "Lo-Fi 音乐播放器",
+    summary: "Lo-Fi Music Player",
     image: lofyee,
     link: "https://lofyee.com",
     color: "rose",
     primary: true,
   },
   {
-    name: "主观世界",
-    summary: "分享我思考的博客",
+    name: "The subjective world",
+    summary: "Share my thoughts on the blog",
     image: subnooc,
     link: "https://subnooc.com",
     color: "red",
@@ -38,14 +38,14 @@ export const PROJECTS = [
   },
   {
     name: "OhMyGPT",
-    summary: "一键部署自己 ChatGPT 应用",
+    summary: "Deploy your own ChatGPT app with one click",
     link: "https://github.com/assischat/ohmygpt",
     color: "green",
     primary: false,
   },
   {
     name: "PH Summary",
-    summary: "Product Hunt 每日摘要",
+    summary: "Product Hunt Daily summary",
     link: "https://twitter.com/ph_summary",
     color: "orange",
     primary: false,
