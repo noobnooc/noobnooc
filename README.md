@@ -3,36 +3,34 @@
 [![Website Status](https://img.shields.io/website?label=https://nooc.me&down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fnooc.me)](https://nooc.me)
 ![](https://komarev.com/ghpvc/?username=noobnooc&color=brightgreen)
 
-- 🔭 I’m currently working on emo
-- 🌱 I’m currently learning to live
-- 👯 I’m looking to collaborate on love
-- 🤔 I’m looking for help with getting rich
-- 💬 Ask me about nothing
-- 📫 How to reach me: call out
-- 😄 Pronouns: that man
-- ⚡ Fun fact: I am not fun
+### Works
 
-### My Stacks
+- [Echobell](https://echobell.one): An iOS app that can convert webhooks & emails to call notifications.
+- [Onei AI](https://onei.ai): An AI navigation website.
+- [CassetteOne](https://cassette.one): A music player that simulates a cassette player on iOS.
+- [Spark Memos](https://sparkmemos.com): A note-taking app that helps you capture your thoughts and ideas.
 
-![](https://img.shields.io/badge/JavaScript-★★★-F7DF1E?logo=JavaScript)
+### Stack
+
 ![](https://img.shields.io/badge/TypeScript-★★★-3178C6?logo=TypeScript)
 ![](https://img.shields.io/badge/React-★★★-61DAFB?logo=React)
-![](https://img.shields.io/badge/CSS-★★★-1572B6?logo=CSS3)
-![](https://img.shields.io/badge/NodeJS-★★★-339933?logo=Node.js)
-![](https://img.shields.io/badge/Swift-★★-F05138?logo=Swift)
-![](https://img.shields.io/badge/Linux-★★-FCC624?logo=Linux)
-![](https://img.shields.io/badge/Git-★★-F05032?logo=Git)
+![](https://img.shields.io/badge/TailwindCSS-★★★-1572B6?logo=tailwindcss)
+![](https://img.shields.io/badge/Next.js-★★★-333333?logo=next.js)
+![](https://img.shields.io/badge/Cloudflare-★★★-F3801F?logo=cloudflare)
+![](https://img.shields.io/badge/Swift-★★★-F05138?logo=Swift)
+![](https://img.shields.io/badge/GitHub-★★★-000000?logo=github)
 ![](https://img.shields.io/badge/Docker-★★-2496ED?logo=Docker)
-![](https://img.shields.io/badge/Electron-★★-47848F?logo=Electron)
-![](https://img.shields.io/badge/MongoDB-★★-47A248?logo=MongoDB)
+![](https://img.shields.io/badge/Electron-★-47848F?logo=Electron)
+![](https://img.shields.io/badge/MongoDB-★-47A248?logo=MongoDB)
 
 > - ★★★: Frequently used
-> - ★★: Mostly used
+> - ★★: Occasionally used
 > - ★: Rarely used
 
-### Where To Find Me
+### Find Me
 
 [![Twitter](https://img.shields.io/badge/Twitter-noobnooc-1DA1F2?logo=Twitter&style=for-the-badge)](https://twitter.com/noobnooc)\
+[![Twitter](https://img.shields.io/badge/Twitter-weelonehq-1DA1F2?logo=Twitter&style=for-the-badge)](https://twitter.com/WeeloneHQ)\
 [![GitHub](https://img.shields.io/badge/GitHub-noobnooc-181717?logo=GitHub&style=for-the-badge)](https://github.com/noobnooc)\
 [![Instagram](https://img.shields.io/badge/Instagram-noobnooc-E4405F?logo=Instagram&style=for-the-badge)](https://www.instagram.com/noobnooc/)
 
