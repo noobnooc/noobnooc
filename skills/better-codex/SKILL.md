@@ -1,6 +1,6 @@
 ---
 name: better-codex
-description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
+description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, superficial patch-on fixes, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
 ---
 
 # Better Codex
@@ -29,6 +29,14 @@ Use these rules as a reliability overlay for codebase work. They convert recurri
 - Batch safe read-only commands and related verification commands to reduce approval prompts, terminal noise, and latency.
 - Ask the user only for decisions that cannot be inferred safely from the repository, the request, or established local patterns.
 - Keep progress updates concise and factual. Avoid long "novel-style" reports.
+
+## Implementation Quality
+
+- Start from the deepest relevant layer: data model, state ownership, API contract, invariants, parsing, persistence, concurrency, or rendering flow. Identify the real cause before choosing the change.
+- Prefer the correct design change over the smallest textual diff when the small diff preserves a broken abstraction or hides the real issue.
+- Do not bolt on duplicate logic, special-case branches, extra UI text, compatibility shims, sleeps, retries, or fallback content to mask a flaw. Fix the source of truth or contract that produces the flaw.
+- Keep the implementation coherent with existing architecture. If the proper fix requires a bounded refactor, do the refactor and verify the affected behavior.
+- Optimize for quality first, then speed. Never trade correctness, maintainability, user data safety, or testability for a faster-looking completion.
 
 ## Debugging And Repair
 
