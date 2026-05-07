@@ -1,0 +1,4 @@
+interface:
+  display_name: "Better Codex"
+  short_description: "Guardrails for safer Codex coding"
+  default_prompt: "Use $better-codex to complete this coding task safely and concisely."
