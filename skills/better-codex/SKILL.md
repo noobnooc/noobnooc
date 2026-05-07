@@ -1,6 +1,6 @@
 ---
 name: better-codex
-description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, over-mocked tests, noisy approvals, or verbose status reports.
+description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
 ---
 
 # Better Codex
@@ -43,6 +43,13 @@ Use these rules as a reliability overlay for codebase work. They convert recurri
 - Inspect command results before claiming success. Do not say a rebuild, restart, test, or migration succeeded unless you saw the result.
 - Do not invent files, fake data, placeholder logic, or unverified state. If placeholder content is necessary, label it clearly and explain why.
 - In the final response, separate completed work from unverified work. State exactly which checks ran and which did not.
+
+## User-Facing Output
+
+- Keep internal reasoning, task interpretation, implementation notes, prompt fragments, user instructions, debugging commentary, and acceptance criteria out of the product UI.
+- User-facing screens should contain only domain content, controls, data, labels, and messages that a real end user should see.
+- If the user asks for explanatory text, place it in the final response or project documentation, not inside the implemented interface, unless the interface explicitly needs help text or onboarding copy.
+- Before finishing frontend or product-copy work, scan rendered text and source strings for leaked assistant language such as "the user asked", "I will", "we need to", "implementation note", "acceptance criteria", or "debug".
 
 ## Tests
 
