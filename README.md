@@ -10,6 +10,12 @@
 - [CassetteOne](https://cassette.one): A music player that simulates a cassette player on iOS.
 - [Spark Memos](https://sparkmemos.com): A note-taking app that helps you capture your thoughts and ideas.
 
+### Agent Skills
+
+- [better-codex](./skills/better-codex/SKILL.md): Guardrails for Codex coding work, including safer scope control, stale-edit prevention, truthful completion, root-cause debugging, meaningful tests, concise updates, and avoiding internal reasoning in user-facing UI.
+
+See [skills/README.md](./skills/README.md) for the full skill catalog.
+
 ### Stack
 
 ![](https://img.shields.io/badge/TypeScript-★★★-3178C6?logo=TypeScript)
