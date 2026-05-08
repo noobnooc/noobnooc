@@ -12,7 +12,7 @@
 
 ### Agent Skills
 
-- [better-codex](./skills/better-codex/SKILL.md): Guardrails for Codex coding work, including safer scope control, stale-edit prevention, quality-first implementation, root-cause debugging, meaningful tests, concise updates, and avoiding internal reasoning in user-facing UI.
+- [better-codex](./skills/better-codex/SKILL.md): Guardrails for Codex coding work, including safer scope control, stale-edit prevention, quality-first implementation, root-cause debugging, product/interface polish, meaningful tests, concise updates, and avoiding internal reasoning in user-facing UI.
 
 See [skills/README.md](./skills/README.md) for the full skill catalog.
 

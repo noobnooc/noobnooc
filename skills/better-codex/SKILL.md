@@ -1,6 +1,6 @@
 ---
 name: better-codex
-description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, superficial patch-on fixes, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
+description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, superficial patch-on fixes, generic product or UI output, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
 ---
 
 # Better Codex
@@ -37,6 +37,16 @@ Use these rules as a reliability overlay for codebase work. They convert recurri
 - Do not bolt on duplicate logic, special-case branches, extra UI text, compatibility shims, sleeps, retries, or fallback content to mask a flaw. Fix the source of truth or contract that produces the flaw.
 - Keep the implementation coherent with existing architecture. If the proper fix requires a bounded refactor, do the refactor and verify the affected behavior.
 - Optimize for quality first, then speed. Never trade correctness, maintainability, user data safety, or testability for a faster-looking completion.
+
+## Product And Interface Quality
+
+- Before implementing user-facing work, identify the purpose, audience, constraints, and the one thing the result should make clearer, easier, or more memorable.
+- Choose an intentional product or design direction that fits the domain. Execute that direction consistently instead of combining generic defaults.
+- Build real, working behavior. Do not substitute static mockups, decorative placeholders, fake interactions, or explanatory copy for functional implementation.
+- Avoid generic AI-looking output: predictable layouts, common font and color defaults, vague marketing copy, decorative clutter, and context-free components.
+- Use cohesive choices for typography, color, spacing, motion, density, empty states, error states, and data presentation when those surfaces exist.
+- Match implementation complexity to the product goal. Minimal interfaces need restraint and precision; rich interfaces need enough structure, interaction, and polish to justify their ambition.
+- Refine visible details before finishing: alignment, responsive behavior, long text, loading states, disabled states, focus states, contrast, and visual hierarchy.
 
 ## Debugging And Repair
 

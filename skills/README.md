@@ -6,4 +6,4 @@ This directory contains Codex agent skills maintained in this repository. Each s
 
 | Skill | Summary |
 | --- | --- |
-| [`better-codex`](./better-codex/SKILL.md) | Adds coding-work guardrails for Codex: tighter scope control, safer file edits, quality-first implementation, root-cause debugging, meaningful tests, concise progress updates, and protection against leaking internal reasoning into user-facing UI. |
+| [`better-codex`](./better-codex/SKILL.md) | Adds coding-work guardrails for Codex: tighter scope control, safer file edits, quality-first implementation, root-cause debugging, product/interface polish, meaningful tests, concise progress updates, and protection against leaking internal reasoning into user-facing UI. |
