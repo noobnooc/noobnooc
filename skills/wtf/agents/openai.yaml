@@ -1,0 +1,4 @@
+interface:
+  display_name: "WTF"
+  short_description: "Pre-ship audit for vibe-coded apps"
+  default_prompt: "Use $wtf to audit this project before I commit or deploy it."
