@@ -1,6 +1,6 @@
 ---
 name: better-codex
-description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, superficial patch-on fixes, generic product or UI output, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
+description: Behavioral guardrails for Codex coding work based on common user complaints. Use when Codex is asked to implement, modify, debug, review, test, or operate on a codebase and should avoid unsafe scope expansion, stale edits, fake completion, brittle edits, shallow debugging, superficial patch-on fixes, one-off special-case code, generic product or UI output, over-mocked tests, noisy approvals, verbose status reports, or leaking internal reasoning into user-facing UI.
 ---
 
 # Better Codex
@@ -35,6 +35,9 @@ Use these rules as a reliability overlay for codebase work. They convert recurri
 - Start from the deepest relevant layer: data model, state ownership, API contract, invariants, parsing, persistence, concurrency, or rendering flow. Identify the real cause before choosing the change.
 - Prefer the correct design change over the smallest textual diff when the small diff preserves a broken abstraction or hides the real issue.
 - Do not bolt on duplicate logic, special-case branches, extra UI text, compatibility shims, sleeps, retries, or fallback content to mask a flaw. Fix the source of truth or contract that produces the flaw.
+- Implement behavior for the relevant class of cases, not just the single observed feature, fixture, route, label, prompt, or user request. Keep the solution general within the scenario's real boundaries.
+- Avoid exact-match conditionals, hard-coded examples, magic strings, request-specific branches, and feature-only patches unless they represent an explicit domain rule or product contract.
+- When a narrow exception is truly required, name the invariant it protects and keep it isolated, tested, and documented in code where future maintainers can understand why it exists.
 - Keep the implementation coherent with existing architecture. If the proper fix requires a bounded refactor, do the refactor and verify the affected behavior.
 - Optimize for quality first, then speed. Never trade correctness, maintainability, user data safety, or testability for a faster-looking completion.
 
