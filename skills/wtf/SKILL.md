@@ -72,6 +72,22 @@ For JavaScript/TypeScript projects, inspect `package.json` scripts first, then r
 - **P2 Medium**: maintainability or reliability issue likely to slow future work, such as stale duplicate code, missing focused tests, weak error handling, or unused dependencies.
 - **P3 Low**: cleanup or polish that is useful but not launch-blocking.
 
+## Host-Specific Review Output
+
+Detect host-specific review capabilities from active system/developer/app instructions, available tools, or local agent docs. Do not infer support from the model name alone, and do not invent pseudo-directives for a host.
+
+- **Codex App**: for findings tied to a specific file and line, emit one inline review comment directive per issue:
+
+  ```text
+  ::code-comment{title="[P1] Short issue title" body="Explain the concrete risk and the smallest practical fix. Redact any secret value." file="/absolute/path/to/file.ts" start=42 end=42 priority=1}
+  ```
+
+  Use absolute file paths, tight line ranges, and `priority` matching severity (`P0`/`P1` = `1`, `P2` = `2`, `P3` = `3`). Keep repo-level findings, missing-file findings, command failures, and residual risks in the normal findings list.
+
+- **Claude Code**: do not assume an inline review comment output directive. Use normal review findings with `file:line` references unless the current Claude Code environment explicitly provides a comment protocol or tool.
+- **Antigravity**: do not assume a portable text directive for artifact or inline comments. If the active environment exposes a native artifact/comment tool, use that tool; otherwise use normal review findings with `file:line` references.
+- **Zed**: do not assume a response-level inline comment directive. Zed may show agent edit review UI, but audit findings should stay in normal review format unless the active Zed environment explicitly provides a comment protocol or tool.
+
 ## Output Format
 
 Lead with findings, ordered by severity. For each finding include:
