@@ -13,7 +13,7 @@
 ### Agent Skills
 
 - [wtf](./skills/wtf/SKILL.md): Pre-launch and pre-commit audit for vibe coding projects, covering project structure, secrets and env hygiene, tracked caches/artifacts, database migrations, ORM/schema drift, deploy footguns, and dead legacy code.
-- [better-codex](./skills/better-codex/SKILL.md): Guardrails for Codex coding work, including safer scope control, stale-edit prevention, general quality-first implementation, root-cause debugging, product/interface polish, meaningful tests, concise updates, and avoiding internal reasoning in user-facing UI.
+- [better-codex](./skills/better-codex/SKILL.md): Guardrails for Codex coding work, including safer scope control, stale-edit prevention, general quality-first implementation, long-term maintainability, root-cause debugging, product/interface polish, meaningful tests, concise updates, and avoiding internal reasoning in user-facing UI.
 
 See [skills/README.md](./skills/README.md) for the full skill catalog.
 
